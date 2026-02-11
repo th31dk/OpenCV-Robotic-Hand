@@ -1,7 +1,7 @@
 # Notebook Information
 Hey guys, this document will be where I track my progress on this project.  
 ## Engineering Design Process
-Throughout this project, I will be using the engineering design process to iterate on my designs
+Throughout this project, I will be using the engineering design process to iterate on my designs:
 
 Identify the problem  
 Brainstorm Solutions  
@@ -10,8 +10,7 @@ Build The Model
 Test For Problems  
 
 # Notebook Entries
-## February 6th, 2026 - Friday
-~2 hours of progress
+## February 6th, 2026 - Friday - ~3 hours of progress
 Today, I designed the first prototype of the index finger. This design will be the base of each finger besides the thumb.  
 
 ### CAD
@@ -31,12 +30,24 @@ After I was done printing it, I aligned all the segments together and put in a M
 I quickly realized that the finger had no way to lift back up after being pulled down.
 
 #### Problem 2
-I also noticed that I couldn't pull down if the finger was bent back
+I also noticed that the finger could bend backwards. This was not only unnatural but made it so I couldn't pull it back down.
 
 ## February 7th, 2026 - Saturday
+Hey guys! Today, I worked on the second prototype of the finger, addressing some of the major problems I found with the first prototype.
+### CAD
+#### Solution to Problem 1
+#### Solution to Problem 2
+
 
 ## February 8th, 2026 - Sunday
 Today, I worked on the 3rd prototype of the index finger
+### CAD
+
 
 ## February 9th, 2026 - Monday
 Today I worked on several of the journal entries because I forgot to do it.
+
+## February 10th, 2026 - Tuesday
+It's my birthday!!! I finished journal entry #1. 
+
+## February 11th, 2026 - Wednesday
