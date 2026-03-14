@@ -39,16 +39,24 @@ Hey guys! Today, I worked on the second prototype of the finger, addressing some
 1. **Use another servo and more fishing line**
     I could use another servo to act like another muscle.
 2. **Use elastic cord**
-
+    This solutions is cheaper and easier to implement, so I will choose this. 
 #### Solution to Problem 2
 Instead of positioning the pin at the very bottom of each joint, I can put it half way. This way, the flat part below the pin will stop the finger from being bent back. 
 
 ### Build
 Once again, I sliced it in Bambu studio and kept all the settings the same. However, since theres now a holder for the elastic cord, I had toprint it sideways with support. I used PETG for support interface to make sure the support is easy to remove. 
+After I was done printing it, I assembled it again. 
+
+### Testing and Identifying Problems
+The new design worked good and I was ready to move on to the servos.
+#### Problem 1
+The servos I tested, SG90 and HS-422 were not powerful enough to overcome the elastic cord. I'll order some stronger motors tonight.
+
+#### Problem 2
+Small problem, but I might use small metal/plastic dowels instead of screws for the pins. The heads and nuts of the screws stick out of each finger. This makes it hard to make the hand because each finger has to be farther apart.
 
 ## February 8th, 2026 - Sunday
-Today, I recieved the new servos and tested them.
+Today, I recieved the new servos and tested them. The servos ended up working fine and were perfect for the job.
 
-
-## February 9th, 2026 - February 12th, 2026
-I worked on filling out the notebook.
+## February 9th, 2026 - March 12th, 2026
+I worked on filling out the notebook. I also took a break from this project at this time. 
