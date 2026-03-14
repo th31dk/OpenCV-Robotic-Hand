@@ -36,22 +36,19 @@ I also noticed that the finger could bend backwards. This was not only unnatural
 Hey guys! Today, I worked on the second prototype of the finger, addressing some of the major problems I found with the first prototype.
 ### CAD
 #### Solution to Problem 1
-I can either add another string and servo or use elastic cord to pull it back automatically. Since the elastic cord is cheaper, I'll use this to pull it back.
+1. **Use another servo and more fishing line**
+    I could use another servo to act like another muscle.
+2. **Use elastic cord**
+
 #### Solution to Problem 2
 Instead of positioning the pin at the very bottom of each joint, I can put it half way. This way, the flat part below the pin will stop the finger from being bent back. 
 
 ### Build
-Once again, I sliced it in Bambu studio and kept all the settings the same. However, since theres now a holder for the elastic cord, I had toprint it sideways with support. I used PETG for support interface to keep the support easy to remove. 
+Once again, I sliced it in Bambu studio and kept all the settings the same. However, since theres now a holder for the elastic cord, I had toprint it sideways with support. I used PETG for support interface to make sure the support is easy to remove. 
 
 ## February 8th, 2026 - Sunday
-Today, I worked on the 3rd prototype of the index finger
-### CAD
+Today, I recieved the new servos and tested them.
 
 
-## February 9th, 2026 - Monday
-Today I worked on several of the journal entries because I forgot to do it.
-
-## February 10th, 2026 - Tuesday
-It's my birthday!!! I finished journal entry #1. 
-
-## February 11th, 2026 - Wednesday
+## February 9th, 2026 - February 12th, 2026
+I worked on filling out the notebook.
