@@ -50,13 +50,87 @@ After I was done printing it, I assembled it again.
 ### Testing and Identifying Problems
 The new design worked good and I was ready to move on to the servos.
 #### Problem 1
-The servos I tested, SG90 and HS-422 were not powerful enough to overcome the elastic cord. I'll order some stronger motors tonight.
+The servos I tested, SG90 and HS-422 were not powerful enough to overcome the elastic cord.
 
 #### Problem 2
-Small problem, but I might use small metal/plastic dowels instead of screws for the pins. The heads and nuts of the screws stick out of each finger. This makes it hard to make the hand because each finger has to be farther apart.
+Each bolt sticks out a little, making it hard to make the hand compact. 
 
+### Brainstorming Solutions
+#### Solution to Problem 1
+I will be purchasing stronger servos on Amazon, specifically DS3225 servos.
+#### Solution to Problem 2
+I found these small metal pins on Amazon that should fit the fingers perfectly.
+![image](/notebook/assets/metalDowels.jpg)
+I might also consider printing plastic rods instead to save cost. 
 ## February 8th, 2026 - Sunday
 Today, I recieved the new servos and tested them. The servos ended up working fine and were perfect for the job.
 
 ## February 9th, 2026 - March 12th, 2026
-I worked on filling out the notebook. I also took a break from this project at this time. 
+I worked on filling out the notebook. I also took a break from this project at this time.
+
+## March 13th, 2026 - Friday - ~1 hour of progress
+### CAD
+Today, I modeled the DS3225 servo so I could have an easy refrence when modeling the palm for the hand. 
+![image](/notebook/assets/DS3225.webp)
+## March 14th, 2026 - Saturday - ~1 hour of progress
+### Identifying Problems
+When testing the fingers that I modeled, I noticed that I had to pull on the string a lot for the fingers to fully close. There was no way that the motors could close that far.
+
+### Solution
+Since the circumfrence of a circle is always larger than  it's diameter, I decided to model a tiny spool, which would help with increasing the length of string it could pull. 
+
+## March 15th, 2026 - Sunday - ~3.5 hours
+### CAD
+Today, I decided to start working on the palm of the hand. One of the goals I had for the hand was to make it look natural, so I wanted it to be compact. Unfortunately, the design I came up with today was really chunky, but I will improve on the design in the future.
+
+I only modeled part of the hand because I was only going to print a small portion of it to test if it would fit.
+![image](/notebook/assets/PalmV1.png)
+
+### Build and Testing
+I printed the small portion in PLA.
+![image](/notebook/assets/palmPrototype_v1_1.jpg)
+
+#### Problem 1
+I didn't account for the wires on the servo, so the servo can't fit into the palm.
+
+#### Problem 2
+Since the servo is so close to the finger, the finger can't close all the way without hitting the servo.
+
+#### Problem 3
+This design uses a LOT of filament. The slicer estimated around 132g of PLA for the whole palm. If I kept this design, I would quickly waste all of my filament. 
+
+### CAD
+I completely overhauled the design. I made the base thinner so that the wire could pass through the palm completely. This thinner design helped reduce the cost of filament as well. The cost went down from 42g to 12g for a single finger. I also moved the servo back so that the finger would never contact the servo when its being pulled down.
+
+![image](/notebook/assets/palmPrototype_v2_1.png)
+
+### Build and Testing
+Once again, I printed this out of PLA. 
+
+#### Problem 1
+This new design didn't fix problem 1 because I couldn't get the stub through the hole because the hole was designed for the servo without the stub.
+
+#### Problem 2
+Although the finger doesn't touch the servo anymore, it can't fully close because it is blocked by the palm.
+
+![image](/notebook/assets/palmPrototype_v2_2.jpg)
+
+### CAD
+Third times the charm! I hope... 
+#### Solution 1
+I cut a hole into the palm so that the stub could pass through cleanly.
+![image](/notebook/assets/palmPrototype_v3_2.png)
+#### Solution 2
+I moved the hole for the pin even higher up so that the finger tip wouldn't hit the palm anymore. 
+![image](/notebook/assets/palmPrototype_v3_1.png)
+
+### Build and Testing
+Not so surprisingly, I printed this out of PLA. This design solved all the problems that I noticed in my old iterations, but other problems showed up quickly. 
+
+![image](/notebook/assets/palmPrototype_v3_3.jpg)
+
+#### Problem 1
+There's no way for the elasic cord to attach to the palm, so it has no way to return to the normal position. Instead, it stays at a 90 degree angle with the palm when not activated. 
+
+#### Problem 2
+Theres no way to route the fishing line, so when the finger is pulling, it gets blocked by the fishing line. 
