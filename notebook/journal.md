@@ -142,3 +142,14 @@ Today, I couldn't spend much time on this project because of school. However, I 
 ![image](/notebook/assets/fullpalmprototype_v1_1.png)
 
 I still need to figure out how to model the thumbs but it's getting late. Good night!
+
+## March 17th, 2026 - Tuesday
+### Code
+Today, I wanted to start coding so I could test my servos. I think that coding will take the longest so I want to start now.  
+To control the finger, I want to use an Arduino R3 I have.
+![image](/notebook/assets/ArduinoUnoPinout.png)
+The servos are controlled with PWM, so I can only use pins 5, 11, 12, 15, 16, 17. This should be enough pins because I only have 5 fingers. In the future, I might upgrade to an esp32 for more PWM pins if needed.
+
+This is one of my first times programming in C++ so this might take a while.
+
+I decided that I wanted to use the serial monitor to control the servos. The basic idea is that I type an angle into the serial monitor and the servo would go to that angle. 
