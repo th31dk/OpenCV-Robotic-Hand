@@ -130,7 +130,15 @@ Not so surprisingly, I printed this out of PLA. This design solved all the probl
 ![image](/notebook/assets/palmPrototype_v3_3.jpg)
 
 #### Problem 1
-There's no way for the elasic cord to attach to the palm, so it has no way to return to the normal position. Instead, it stays at a 90 degree angle with the palm when not activated. 
+There's no way for the elastic cord to attach to the palm, so it has no way to return to the normal position. Instead, it stays at a 90 degree angle with the palm when not activated. 
 
 #### Problem 2
 Theres no way to route the fishing line, so when the finger is pulling, it gets blocked by the fishing line. 
+
+## March 16th, 2026 - Monday - ~0.5 hours of progress
+### CAD
+Today, I couldn't spend much time on this project because of school. However, I modeled a better design of the palm. For this new iteration, I want to implement a forearm which will hold all my servos instead of storing the servos in the palm. I haven't modeled the forearm with the servo holders yet, but here's what I modeled!
+
+![image](/notebook/assets/fullpalmprototype_v1_1.png)
+
+I still need to figure out how to model the thumbs but it's getting late. Good night!
