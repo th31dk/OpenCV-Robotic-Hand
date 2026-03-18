@@ -144,12 +144,27 @@ Today, I couldn't spend much time on this project because of school. However, I 
 I still need to figure out how to model the thumbs but it's getting late. Good night!
 
 ## March 17th, 2026 - Tuesday
-### Code
-Today, I wanted to start coding so I could test my servos. I think that coding will take the longest so I want to start now.  
+Today, I wanted to start coding so I could test my servos. I think that coding will take the longest so I want to start now.
 To control the finger, I want to use an Arduino R3 I have.
 ![image](/notebook/assets/ArduinoUnoPinout.png)
 The servos are controlled with PWM, so I can only use pins 5, 11, 12, 15, 16, 17. This should be enough pins because I only have 5 fingers. In the future, I might upgrade to an esp32 for more PWM pins if needed.
 
 This is one of my first times programming in C++ so this might take a while.
 
-I decided that I wanted to use the serial monitor to control the servos. The basic idea is that I type an angle into the serial monitor and the servo would go to that angle. 
+### Identify the Problem
+I need a way to find how much my servo needs to pull for the hand to fully close.
+
+### Brainstorm Solutions
+I can write a program where I can tell the servo to go to a certain angle. When I find the write angle, I can write it down.
+
+### Implement the Best Solution
+I've started coding the servos on Arduino IDE. 
+
+### Identify the Problem
+The overall goal of this hand is to be able to see my fingers and it's position and mimic that onto the hand. 
+
+### Brainstorm Solutions
+When researching ways for the computer to see and process my hand, I stumbled across OpenCV. OpenCV is a library thats made for computer vision. Using computer vision, I can see what angle each segment of my fingers are at. 
+
+I've read through this article by OpenCV and it seemed to match what I wanted.
+https://opencv.org/wp-content/uploads/2020/11/Universal-Hand-Control.pdf
