@@ -168,3 +168,6 @@ When researching ways for the computer to see and process my hand, I stumbled ac
 
 I've read through this article by OpenCV and it seemed to match what I wanted.
 https://opencv.org/wp-content/uploads/2020/11/Universal-Hand-Control.pdf
+
+## March 19th, 2026 - Thursday - ~0.5 Hour
+Today, I drew out the 
