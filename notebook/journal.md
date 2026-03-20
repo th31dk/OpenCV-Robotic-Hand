@@ -170,4 +170,11 @@ I've read through this article by OpenCV and it seemed to match what I wanted.
 https://opencv.org/wp-content/uploads/2020/11/Universal-Hand-Control.pdf
 
 ## March 19th, 2026 - Thursday - ~0.5 Hour
-Today, I drew out the 
+Today, I drew out the schematic of the robotic arm. It's pretty simple but it doesn't need to be very complicated. 
+![image](/notebook/assets/roboticHand_schematic_1.png)
+
+I'll be using a DC Power Supply to power the servos. The Arduino will be powered by my PC through the USB port. I'm a bit worried that the servos will draw too much current. However, my power supply has overcurrent protection so it shouldn't burn my house down.  
+
+On Tuesday, I'm not sure why I thought 12, 15, and 16 had PWM function. I looked closer at the board today and realized that the pins with the tilde were the only ones with PWM features.  
+
+Thats all I did today! See you tomorrow!
