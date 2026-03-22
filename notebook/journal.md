@@ -178,3 +178,72 @@ I'll be using a DC Power Supply to power the servos. The Arduino will be powered
 On Tuesday, I'm not sure why I thought 12, 15, and 16 had PWM function. I looked closer at the board today and realized that the pins with the tilde were the only ones with PWM features.  
 
 Thats all I did today! See you tomorrow!
+
+## March 21st, 2026 - Saturday
+Happy Saturday! I'm so glad that it's the weekend. Today, I want to work on the CAD of the hand and address a problem that I have with my current finger design.
+
+### CAD
+#### Identifying Problems
+The problem that I have with the current design is that the current aligners for the elastic cord stick out the top of the finger. The current design doesn't look good and is hard to 3D print.
+
+![image](/notebook/assets/elasticProblem.png)
+
+#### Solution
+I plan to fix this by cutting holes into the finger. This will likely need completely new design because the slots of the holes take up too much space. I might switch to 1 or 2mm pins instead of 3mm pins to save space.
+
+Now that we have identified our solution, lets start designing!
+
+Here's my updated design!
+
+|New|Old|
+|---|---|
+|![image](/notebook/assets/fingerPrototype_v4_2_1.png)|![image](/notebook/assets/fingerPrototype_v3_2_1.png)|
+
+As you can see, I've moved the holes to inside the finger and used a smaller pin hole. This has allowed me to increase the filet on the finger. making it look better.
+
+I've printed the segment in PLA on my Bambu P1S. I also printed one in TPU because I want to test if it will give me extra grip when holding items.
+
+I think the new design works fine. I still need to model the other finger segments, so I won't know if the design is perfect until then. I'll start working on the next segments now. 
+
+TADA!
+|Segment 1|Segment 2|Segment 3|Full Assembly|
+|---|---|---|---|
+|![image](/notebook/assets/fingerPrototype_v4_1_1.png)|![image](/notebook/assets/fingerPrototype_v4_2_1.png)|![image](/notebook/assets/fingerPrototype_v4_3_1.png)|![image](/notebook/assets/fingerPrototype_v4_full_1.png)|
+
+Since I didn't have any m2 bolts and nuts, I just modeled a 2mm cylinder to act as a pin. Hopefully this will reduce the overall cost of the hand.
+
+#### Testing and Identifying Problems
+I printed all the segments and the pin out of Black PLA. It didn't really work after putting it together because the circles were misshaped. 
+
+#### Solution
+I think this is because I printed it in a different orientation that I usually print it. I tried this different orientation because I didn't want to use support, but I will print again and see.
+
+#### Testing and Identifying Problems
+It worked! You should definetly print circles and arcs parallel to the print bed for better accurany. 
+
+Here's the assembled finger!
+![image](/notebook/assets/fingerPrototype_v4_full_2.jpg)
+It looks so clean compared to the old one.
+
+## March 22nd, 2026 - Sunday
+Today I want to continue modeling the hand and maybe code for a little bit. Let's get started!
+### CAD
+Last week, I identified a few problems with the hand. One of which was that the string could not be routed so the finger ends up just hitting the string. I think I will completely redesign the hand because I now use 2mm holes instead of 3mm.
+
+Drum Roll Please!
+
+poof
+
+![image](/notebook/assets/fullHandprototype_v2_1.png)
+
+The hardest part was definetly making the holes for routing the fishing line. It took me a while for me to line the two holes up perfectly. 
+
+I still need to make a way for the elastic cord to be routed and the thumb.
+
+I'm not sure how I'll model the thumb because it behaves so much differently from the other fingers. Like the other fingers, it has 3 segments, but one segment is build into your palm, so I likely need to cut a hole in the palm to mount it. 
+
+It's kinda crazy how important your thumb is to holding things. I don't thing you can grip things well without your thumbs. Like try gripping picking stuff up without your thumbs. You'll quickly miss using your thumbs.
+
+I decided not to print out the palm yet because it takes around 50g of filament to print. I'm trying to save costs as much as possible so I'm holding off until I model the thumb. 
+
+I think that's it for today! I'll probably code a little bit over the week and continue the CAD over the next weekend. I also have spring break next week so I hope to finish the CAD and get a lot of the code done then. 
