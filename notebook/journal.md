@@ -247,3 +247,33 @@ It's kinda crazy how important your thumb is to holding things. I don't thing yo
 I decided not to print out the palm yet because it takes around 50g of filament to print. I'm trying to save costs as much as possible so I'm holding off until I model the thumb. 
 
 I think that's it for today! I'll probably code a little bit over the week and continue the CAD over the next weekend. I also have spring break next week so I hope to finish the CAD and get a lot of the code done then. 
+
+## March 29th, 2026 - Sunday
+Hi guys! Today, I'll CAD the thumb of the hand. Like I mentioned earlier, this will likely be the hardest part of the hadn to model simply because of the different mechanism.
+
+### CAD
+![image](/notebook/assets/thumbPrototype_v1_3_1.png)
+
+Here's my first prototype! modeled the first segment at an angle because your thumb's first section is shaped like a triangle. kinda...
+
+I had a big of trouble modeling the holes because they didn't enter or exit on the same axis. However, I learned about the sweep cut tool in SolidWorks. It basically stiches your two holes on different faces together.
+
+Thinking I had a good design, I decided to build the full thumb in assembly. I decided to use segments from the other fingers. 
+![image](/notebook/assets/thumbPrototype_v1_full_1.png)
+
+## March 30th, 2026 - Monday
+Today, I started by finishing up the palm design.
+
+Again, I used the sweep tool in SolidWorks to converge the fishing line from the fingers down to the wrist area. 
+![image](/notebook/assets/palmPrototype_v4_1.png)
+
+I also added the holes I need for the elastic cords to connect the the palm.
+![image](/notebook/assets/palmPrototype_v4_2.png)
+
+After that, I finished the assembly of the palm.
+![image](/notebook/assets/fullHandprototype_v2_2.png)
+
+To connect the 4 other fingers to the palm, I'm planning on printing a long rod so it'll be easy to pin 4 of them instead of having an individual pin for each finger. 
+
+I'm pretty happy with this design. I'll have to print it all out and test it next.
+
