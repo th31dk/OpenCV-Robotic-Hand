@@ -8,6 +8,9 @@ Servo middleServo;
 Servo ringServo;
 Servo pinkyServo;
 
+// Variables
+int(servoAngle) = 0;
+
 void setup() {
 // Pin Assignments
 thumbServo.attach(5);
@@ -18,8 +21,12 @@ thumbServo.attach(16);
 
 // Serial Monitor
 Serial.begin(9600);
-Serial.println("Ready!");
+Serial.print("Ready!");
 }
 void loop() {
-
+  if (Serial.available() > 0) {
+    servoAngle = Serial.read();
+    
+    Serial.println(servoAngle, DEC);
+  }
 }
