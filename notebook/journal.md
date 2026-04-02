@@ -264,6 +264,7 @@ Thinking I had a good design, I decided to build the full thumb in assembly. I d
 ## March 30th, 2026 - Monday
 Today, I started by finishing up the palm design.
 
+### CAD
 Again, I used the sweep tool in SolidWorks to converge the fishing line from the fingers down to the wrist area. 
 ![image](/notebook/assets/palmPrototype_v4_1.png)
 
@@ -276,4 +277,35 @@ After that, I finished the assembly of the palm.
 To connect the 4 other fingers to the palm, I'm planning on printing a long rod so it'll be easy to pin 4 of them instead of having an individual pin for each finger. 
 
 I'm pretty happy with this design. I'll have to print it all out and test it next.
+
+## April 1st, 2026 - Tuesday
+Happy April Fool's Day!
+
+Today, I wanted to work on assembling and coding the hand. 
+
+### Code
+Through my research, I figured out how to have the microcontroller read my inputs to the serial monitor. I ran into some problems setting it up, but I think it's just a syntax problem.
+
+I've referenced the example code in the Arduino docs and wrote code off of that to test out the serial monitor. The code is supposed to return the value that I put in, but it doesn't do that. Instead it returns a random string of numbers when I do. For example, when I input "1", it spits out "49 10"
+![image](/notebook/assets/servoCode_1.png)
+
+Okay... I've figured it out. After looking at the Arduino forums and docs, I found that I need to use "serial.parseInt" instead of "serial.read". Basically, "serial.parseInt" reads the whole string of numbers I give it and keeps it in deicmal form. "serial.read" on the other hand, only reads the first number and converts it to ASCII.
+
+After testing it, it now outputs the right numbers, but outputs a 0 after everytime I input. After reading a bit more, I found that I need to change the settings from "New Line" to "No Line Ending".
+
+Next, I need to see how I'm gonna select a finger to control. I want to add a prefix to each number. The microcontroller will read the prefix, then the angle. This way, it'll know which finger I'm talking about when telling it an angle.
+### Build
+I printed out the parts for the thumb in PLA. 
+
+![image](/notebook/assets/thumbPrototype_v1_full_2.jpg)
+
+After building the thumb, I found that the holes from segments 2 and 3 aren't aligned well, so I decided to take another look at the CAD. 
+
+In the CAD, the fingers weren't lining up either, so it wasn't a 3D printer problem. 
+
+Turns out, I've been using the same cut path/angle for both the elastic cord and the fishing line. This is a problem because the hole for the elastic cord is longer than the hole for the fishing line. Although the path was perfact for the elastic cord, it wasn't for the fishing line. 
+
+To solve this, I created a new path just for the fishing line. Now they line up perfectly in the CAD
+
+Another problem I faced when building the finger was the tolerances on the pin holes between each finger segment. The pins would just fall straight out. To solve this, I will change the rod diamenter from 2mm to 2.2mm.
 
