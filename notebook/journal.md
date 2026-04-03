@@ -278,7 +278,7 @@ To connect the 4 other fingers to the palm, I'm planning on printing a long rod 
 
 I'm pretty happy with this design. I'll have to print it all out and test it next.
 
-## April 1st, 2026 - Tuesday
+## April 1st, 2026 - Wednesday
 Happy April Fool's Day!
 
 Today, I wanted to work on assembling and coding the hand. 
@@ -294,6 +294,7 @@ Okay... I've figured it out. After looking at the Arduino forums and docs, I fou
 After testing it, it now outputs the right numbers, but outputs a 0 after everytime I input. After reading a bit more, I found that I need to change the settings from "New Line" to "No Line Ending".
 
 Next, I need to see how I'm gonna select a finger to control. I want to add a prefix to each number. The microcontroller will read the prefix, then the angle. This way, it'll know which finger I'm talking about when telling it an angle.
+
 ### Build
 I printed out the parts for the thumb in PLA. 
 
@@ -309,3 +310,21 @@ To solve this, I created a new path just for the fishing line. Now they line up 
 
 Another problem I faced when building the finger was the tolerances on the pin holes between each finger segment. The pins would just fall straight out. To solve this, I will change the rod diamenter from 2mm to 2.2mm.
 
+I also wanted to start building the electrical circuit for testing. Turns out, I was running super low on male to male dupont wires, so I couldn't color coordinate the wires well. I also accidentally released the magic smoke on one of those breadboard power supplies.
+
+Anyways, here's the final product:
+
+![image](/notebook/assets/electronics_1.jpg)
+
+Underwhelming? Yeah I swear I'll clean it up one day. The dupont wires are coming on Friday, so I want to complete the code tomorrow. I'll also print the palm tomorrow. 
+
+## April 2nd, 2026 - Thursday
+Hello! Today, I'll finish the servo testing/callibration code.
+
+I finally got it working! It now outputs the finger and the angle that I want. When I input "T90," it outputs "Thumb90". 
+
+Now that it's working, let's move on to controlling actual servos. 
+
+Under each of my elif statements, I've added a "fingerServo.write(servoAngle)" function.
+
+![image](/notebook/assets/code_1.png)
