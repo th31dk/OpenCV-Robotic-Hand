@@ -6,5 +6,6 @@ This is a robotic hand that utilizes servos, OpenCV, and 3d printed parts to cre
 Fishing Line
 Breadboard
 Arduino Uno
-Fishing Line
+Elastic Cord
 PLA
+Male to Male Dupont Wires

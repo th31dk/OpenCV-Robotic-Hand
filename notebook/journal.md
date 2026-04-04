@@ -419,3 +419,7 @@ WOW it looks weird. Everythings more blue now instead of red. Anyways, back to c
 All of the code that people have used in the past uses a different type of mediapipe which uses different functions so it looks like I'm on my own.
 
 This project is honestly a lot harder than I thought it'd be but I think I'm on the final stretch.
+
+After running my code, I ran into the problem of "serial.serialutil.SerialException: could not open port 'COM3': PermissionError(13, 'Access is denied.', None, 5)". Another simple fix. I had the serial monitor running on Arduino IDE so it interfered with my python code.
+
+After running into error after error, I decided to just use mediapipe's example code as a base to start off of.
