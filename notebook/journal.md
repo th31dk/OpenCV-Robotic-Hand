@@ -328,3 +328,94 @@ Now that it's working, let's move on to controlling actual servos.
 Under each of my elif statements, I've added a "fingerServo.write(servoAngle)" function.
 
 ![image](/notebook/assets/code_1.png)
+
+The microcontroller should be able to control the servos now.
+
+## April 3rd, 2026 - Friday
+### CAD
+Hey guys! Today, I want to design the forearm where it will house the servos that control the movement of the fingers. It'll be difficult to cram 5 servos into the forearm, but I'll try my best to make it work. 
+
+Now, I'm thinking of designing the forearm around the servo housing, so I will need to make the servo housing first. 
+
+Since the forearm is wider than it is deep, I'm thinking of positioning the servos horizontally as opposed to vertically. 
+
+This was my first design.
+![image](/notebook/assets/forearm_v1_1.png)
+
+I quickly noticed a problem in this design. Since the top and bottom servo would be in the same level, the string of the bottom servo would knock into the horn of the top servo. 
+
+To negate the issue, I decided to position the servos kinda like this instead.
+
+![image](/notebook/assets/forearm_v1_2.jpg)
+
+Here's another design based off of that
+
+![image](/notebook/assets/forearm_v1_3.png)
+
+I dont really like this design either because it is too wide. I have one more design idea that might work. It involves stacking the servos vertically on it's side instead. 
+
+![image](/notebook/assets/forearm_v1_4.png)
+
+Although this sketch doesn't show much, I like this design way more since it expands vertically instead of horizontally. The only downside of this design is that the bottom servo has to be on the same height/direction of one of the other servos. This runs into the same problem that I addressed with my first design. I could fix this by making that final servo face forward instead of being on its side. 
+
+I'll fix this problem and start extruding the forearm.
+
+![image](/notebook/assets/forearm_v1_5.png)
+
+I designed it so each servo can slot into it's designated slot. The each servo will also be screwed into the bar above for more security. I can then drop it right into the the forearm casing. 
+
+I'm thinking of rotating the fifth servo casing 90 degrees. This will align it's horn to the middle of the forearm.
+
+I'm done! 
+
+![image](/notebook/assets/forearm_v1_6.png)
+
+I added the screw holes and the proper casing for the rotated servo. I made the holes 2.9mm because I didn't have threaded inserts to make the hold stronger. 
+
+Next, I'll print it out and test the tolerances for the print.
+
+I KEEP MAKING THE SAME MISTAKES ON EVERY PRINTTTTTTTTTTT. I forgot to account for the wire stub again so it doesn't fit when the wire stub is facing the flat portion.
+
+![image](/notebook/assets/forearm_v1_7.png)
+
+The fix is rather simple: just narrow down the main body of the servo holder. It's kind of annoying that I made this mistake but atleast it's a fairly easy fix.
+
+Time to send the print to the printer!
+### Code
+Today, I also wanted to get started on the OpenCV code. I'm a beginner to python and I've never worked with the OpenCV library so it might be a bit difficult for me to program it.
+
+Okay so this is way more complicated than I thought it would be. I think my goal for today will be for OpenCV to open my camera. 
+
+After installing OpenCV, I decided to take a look at some of the example codes on the internet. I learned that you need to declare what camera you plan to use. Since I only have 1 camera, I used the default, "0"
+
+Something cool thats kinda obvious now that I've learned about it is that OpenCV processes each frame individually instead of just looking at the video. I'm not sure if that makes sense or not. 
+
+Anyways, after running my code, the window thats supposed to show what my camera sees just straight up crashed without displaying anything. After looking up my problem, I found out that I need to add a line of code that tells my PC how long the pictures need to be shown for, otherwise it'll overload the computer. 
+
+After the fix, everything showed up fine! Until... I wanted to close the window, but it came back! I had indeed forgot to add a way to escape the "while True" loop.
+
+Once again, Google came to the rescue and told me how to put in a line that would detect whenever the window is closed and terminate the running code.
+
+AFTER ANOTHER GOOGLE SEARCH, I found out that "waitkey(1)" doesn't just wait until 1ms has passed, it outputs the ASCII code of the key that is pressed within that period! So, I just need to add an if statement that checks if that ASCII code is equivilent to, lets just say, the escape key. When I press the escape key, it should stop the program entirely.
+
+And it works!
+
+I still have a bit of time to work on the project today, so I'll get started on the hand tracking.
+
+After some research, I found that there are two ways to do hand tracking, contour detection and landmark detection. contour detection works by detecting colors similar to the target. So it's kinda like a greenscreen thing. Landmark detection, on the other hand, works by plotting points at specific places on the target. So for your hands, it would plot points on each of your finger joints. I'll probably choose landmark detection because it seems cooler and more accurate. 
+
+For landmark detection, I can use a library or train my own model. Since I'm still a beginner and short on time, I'll choose an existing library. One of these libraries is google's Media Pipeline. On it's website it says that its compatible with python, which is perfect for my project.
+
+![image](/notebook/assets/MediaPipe.png)
+
+Okay, apparently OpenCV outputs in BGR and mediapipe reads in RGB, so I'll need to convert it. In the while loop, I'll add a function that automatically converts each frame after it is taken. I hope it doesn't add lag to the stream.
+
+Something that I don't like about OpenCV is that it takes a long time to boot up after I run the code. I'm estimating around 1-2 minutes. I'm not sure what to do about it but yeah.
+
+Anyways, I've convverted the BGR to RGB so I'm kinda curious what everything will look like. Well, after I started the code, it looks identical so I'm not sure. Then I realized I forgot to change the image it's showing to the RGB feed. 
+
+WOW it looks weird. Everythings more blue now instead of red. Anyways, back to coding.
+
+All of the code that people have used in the past uses a different type of mediapipe which uses different functions so it looks like I'm on my own.
+
+This project is honestly a lot harder than I thought it'd be but I think I'm on the final stretch.
