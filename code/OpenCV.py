@@ -21,6 +21,10 @@ FONT_SIZE = 1
 FONT_THICKNESS = 1
 HANDEDNESS_TEXT_COLOR = (88, 205, 54) # vibrant green
 
+FINGER_LETTERS = ['T', 'I', 'M', 'R', 'P']
+FINGER_TIPS = [4, 8, 12, 16, 20]
+FINGER_MCPS = [2, 5, 9, 13, 17]
+
 def draw_landmarks_on_image(rgb_image, detection_result):
   hand_landmarks_list = detection_result.hand_landmarks
   handedness_list = detection_result.handedness
@@ -53,9 +57,18 @@ def draw_landmarks_on_image(rgb_image, detection_result):
 
   return annotated_image
 
+def servo_angles(results):
+    if not results.hand_landmarks[0]:
+       return
+    hand = results.hand_landmarks[0]
+    for letter, tip, mcp in zip(FINGER_LETTERS, FINGER_TIPS, FINGER_MCPS):
+       curled = hand[tip].y > hand[mcp].y
+       angle = 180 if curled else 0
+       uno.write(f'{letter}{angle}/n'.encode())
+
 model_path = os.path.join(os.path.dirname(__file__), 'hand_landmarker.task')
 base_options = python.BaseOptions(model_asset_path=model_path)
-options = vision.HandLandmarker(base_options=base_options, num_hands=1)
+options = vision.HandLandmarkerOptions(base_options=base_options, num_hands=1)
 detector = vision.HandLandmarker.create_from_options(options)
 
 while True:

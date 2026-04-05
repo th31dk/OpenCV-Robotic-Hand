@@ -13,7 +13,7 @@ Test For Problems
 ## February 6th, 2026 - Friday - ~3 hours of progress
 Today, I designed the first prototype of the index finger. This design will be the base of each finger besides the thumb.  
 
-### CAD
+### Design
 ![image](/notebook/assets/Finger-Prototype1.png)  
 
 Since fingers mainly move in I decided to use a resolute/hinge joint for each segment of the finger. For the pins of each hinge, I took inspiration from my school's VEX V5 team. We often use screws to act as pins for hinges, so I decided to use that in my design. I designed each hole to have a diameter of 3.2mm to account for the tolerance of my 3D printer and used M3 screws.  
@@ -34,7 +34,7 @@ I also noticed that the finger could bend backwards. This was not only unnatural
 
 ## February 7th, 2026 - Saturday
 Hey guys! Today, I worked on the second prototype of the finger, addressing some of the major problems I found with the first prototype.
-### CAD
+### Design
 #### Solution to Problem 1
 1. **Use another servo and more fishing line**
     I could use another servo to act like another muscle.
@@ -69,7 +69,7 @@ Today, I recieved the new servos and tested them. The servos ended up working fi
 I worked on filling out the notebook. I also took a break from this project at this time.
 
 ## March 13th, 2026 - Friday - ~1 hour of progress
-### CAD
+### Design
 Today, I modeled the DS3225 servo so I could have an easy refrence when modeling the palm for the hand. 
 ![image](/notebook/assets/DS3225.webp)
 ## March 14th, 2026 - Saturday - ~1 hour of progress
@@ -80,7 +80,7 @@ When testing the fingers that I modeled, I noticed that I had to pull on the str
 Since the circumfrence of a circle is always larger than  it's diameter, I decided to model a tiny spool, which would help with increasing the length of string it could pull. 
 
 ## March 15th, 2026 - Sunday - ~3.5 hours
-### CAD
+### Design
 Today, I decided to start working on the palm of the hand. One of the goals I had for the hand was to make it look natural, so I wanted it to be compact. Unfortunately, the design I came up with today was really chunky, but I will improve on the design in the future.
 
 I only modeled part of the hand because I was only going to print a small portion of it to test if it would fit.
@@ -99,7 +99,7 @@ Since the servo is so close to the finger, the finger can't close all the way wi
 #### Problem 3
 This design uses a LOT of filament. The slicer estimated around 132g of PLA for the whole palm. If I kept this design, I would quickly waste all of my filament. 
 
-### CAD
+### Design
 I completely overhauled the design. I made the base thinner so that the wire could pass through the palm completely. This thinner design helped reduce the cost of filament as well. The cost went down from 42g to 12g for a single finger. I also moved the servo back so that the finger would never contact the servo when its being pulled down.
 
 ![image](/notebook/assets/palmPrototype_v2_1.png)
@@ -115,7 +115,7 @@ Although the finger doesn't touch the servo anymore, it can't fully close becaus
 
 ![image](/notebook/assets/palmPrototype_v2_2.jpg)
 
-### CAD
+### Design
 Third times the charm! I hope... 
 #### Solution 1
 I cut a hole into the palm so that the stub could pass through cleanly.
@@ -136,7 +136,7 @@ There's no way for the elastic cord to attach to the palm, so it has no way to r
 Theres no way to route the fishing line, so when the finger is pulling, it gets blocked by the fishing line. 
 
 ## March 16th, 2026 - Monday - ~0.5 hours of progress
-### CAD
+### Design
 Today, I couldn't spend much time on this project because of school. However, I modeled a better design of the palm. For this new iteration, I want to implement a forearm which will hold all my servos instead of storing the servos in the palm. I haven't modeled the forearm with the servo holders yet, but here's what I modeled!
 
 ![image](/notebook/assets/fullpalmprototype_v1_1.png)
@@ -180,9 +180,9 @@ On Tuesday, I'm not sure why I thought 12, 15, and 16 had PWM function. I looked
 Thats all I did today! See you tomorrow!
 
 ## March 21st, 2026 - Saturday
-Happy Saturday! I'm so glad that it's the weekend. Today, I want to work on the CAD of the hand and address a problem that I have with my current finger design.
+Happy Saturday! I'm so glad that it's the weekend. Today, I want to work on the design of the hand and address a problem that I have with my current finger design.
 
-### CAD
+### Design
 #### Identifying Problems
 The problem that I have with the current design is that the current aligners for the elastic cord stick out the top of the finger. The current design doesn't look good and is hard to 3D print.
 
@@ -227,7 +227,7 @@ It looks so clean compared to the old one.
 
 ## March 22nd, 2026 - Sunday
 Today I want to continue modeling the hand and maybe code for a little bit. Let's get started!
-### CAD
+### Design
 Last week, I identified a few problems with the hand. One of which was that the string could not be routed so the finger ends up just hitting the string. I think I will completely redesign the hand because I now use 2mm holes instead of 3mm.
 
 Drum Roll Please!
@@ -246,12 +246,12 @@ It's kinda crazy how important your thumb is to holding things. I don't thing yo
 
 I decided not to print out the palm yet because it takes around 50g of filament to print. I'm trying to save costs as much as possible so I'm holding off until I model the thumb. 
 
-I think that's it for today! I'll probably code a little bit over the week and continue the CAD over the next weekend. I also have spring break next week so I hope to finish the CAD and get a lot of the code done then. 
+I think that's it for today! I'll probably code a little bit over the week and continue the design over the next weekend. I also have spring break next week so I hope to finish the design and get a lot of the code done then. 
 
 ## March 29th, 2026 - Sunday
-Hi guys! Today, I'll CAD the thumb of the hand. Like I mentioned earlier, this will likely be the hardest part of the hadn to model simply because of the different mechanism.
+Hi guys! Today, I'll design the thumb of the hand. Like I mentioned earlier, this will likely be the hardest part of the hadn to model simply because of the different mechanism.
 
-### CAD
+### Design
 ![image](/notebook/assets/thumbPrototype_v1_3_1.png)
 
 Here's my first prototype! modeled the first segment at an angle because your thumb's first section is shaped like a triangle. kinda...
@@ -264,7 +264,7 @@ Thinking I had a good design, I decided to build the full thumb in assembly. I d
 ## March 30th, 2026 - Monday
 Today, I started by finishing up the palm design.
 
-### CAD
+### Design
 Again, I used the sweep tool in SolidWorks to converge the fishing line from the fingers down to the wrist area. 
 ![image](/notebook/assets/palmPrototype_v4_1.png)
 
@@ -300,13 +300,13 @@ I printed out the parts for the thumb in PLA.
 
 ![image](/notebook/assets/thumbPrototype_v1_full_2.jpg)
 
-After building the thumb, I found that the holes from segments 2 and 3 aren't aligned well, so I decided to take another look at the CAD. 
+After building the thumb, I found that the holes from segments 2 and 3 aren't aligned well, so I decided to take another look at the assembly. 
 
-In the CAD, the fingers weren't lining up either, so it wasn't a 3D printer problem. 
+In the assembly, the fingers weren't lining up either, so it wasn't a 3D printer problem. 
 
 Turns out, I've been using the same cut path/angle for both the elastic cord and the fishing line. This is a problem because the hole for the elastic cord is longer than the hole for the fishing line. Although the path was perfact for the elastic cord, it wasn't for the fishing line. 
 
-To solve this, I created a new path just for the fishing line. Now they line up perfectly in the CAD
+To solve this, I created a new path just for the fishing line. Now they line up perfectly in the assembly.
 
 Another problem I faced when building the finger was the tolerances on the pin holes between each finger segment. The pins would just fall straight out. To solve this, I will change the rod diamenter from 2mm to 2.2mm.
 
@@ -332,7 +332,7 @@ Under each of my elif statements, I've added a "fingerServo.write(servoAngle)" f
 The microcontroller should be able to control the servos now.
 
 ## April 3rd, 2026 - Friday
-### CAD
+### Design
 Hey guys! Today, I want to design the forearm where it will house the servos that control the movement of the fingers. It'll be difficult to cram 5 servos into the forearm, but I'll try my best to make it work. 
 
 Now, I'm thinking of designing the forearm around the servo housing, so I will need to make the servo housing first. 
@@ -423,3 +423,77 @@ This project is honestly a lot harder than I thought it'd be but I think I'm on 
 After running my code, I ran into the problem of "serial.serialutil.SerialException: could not open port 'COM3': PermissionError(13, 'Access is denied.', None, 5)". Another simple fix. I had the serial monitor running on Arduino IDE so it interfered with my python code.
 
 After running into error after error, I decided to just use mediapipe's example code as a base to start off of.
+
+Right off the bat, I was running into less errors. My goal is just to feed the camera stream into mediapipe's hand detection function, and it should just spit out a video that has hand detection. However, like everything, it isn't as simple as it seems. Running into more errors, I realized I need to have the bundle downloaded. After downleading the bundle, I still ran into more errors with the path to the bundle not being right, despite it being right. 
+
+I decided to just go to bed since I was just tired of the errors. Maybe it'll fix its self tomorrow.
+
+## April 4th, 2026 - Saturday
+### Design
+Last night, while waiting for OpenCV to boot up, I would work on attaching the servos to the servo mount. It's kind of impressive how heavy it is. I'm glad I decided to put it all in the forearm instead of the hand.
+![image](/notebook/assets/forearm_v1_8.jpg)
+
+Next I need to design a forearm where the hand will mount to. I'm thinking of making the bottom of the hand a little more narrow to look more like a hand. I also might have to change the location of the fishing line holes.
+
+Progress Check!
+
+![image](/notebook/assets/fullarm_v1_1.png)
+
+I'm a little worried that the fishing line will be rubbing against things when being pulled and retracted, so I'll slip a piece of PTFE tubing over the line when I'm building it.
+
+![image](/notebook//assets//fullarm_v1_2.png)
+
+This is going to be what the final product is going to look like. I still have to make some minor adjustments but it should be ready for printing soon
+
+![image](/notebook/assets/forearm_v1_9.png)
+
+I added holes for the servo mount to screw into the back plate. I also added a big hole for the fishing line to come out of the hand and into the forearm. Lastly, I extruded a triangle support to help with the stress placed on the backplate. The sliced model came out to 73.4g, but I think I can get the model to weigh a bit less. 
+
+Firstly, the big block supporting the last servo has no use since gravity is not pulling in the direction of the block. Removing this will remove a whopping 5g. I could also round out the corders of forearm. This brings the final filament cost to 65.8g. BUT WAIT, THERES MORE!! By reducing the infill percentage to 7%, I bring it down to 62g. 
+
+Wow I saved a total of 10 cents...
+
+Anyways let's print it out.
+
+10% through the print, I realized that I did not add screw holes for attaching the hand to the forearm. I canceled the print and added the holes. I decided to print out the hand first at a smaller layer height to make the circles more circular.
+
+After printing the palm out, I wanted to test out the tunnels for the fishing line, but I could not thread a line through any of the tunnels.
+
+To solve this, I'll expand the holes to 2mm and redoing the paths.
+
+I learned how to use 3D sketching to draw out proper paths for the sweep cuts. 3D sketching is kinda weird since I'm used to just sketching on a plane/face. I had to adjust each point in all 3 axis.
+
+![image](/notebook/assets/palmPrototype_v4_5.png)
+
+After slicing it it came out to 22g, cheaper than ever! It's probably because I used wider tunnels this time.
+
+Next, I'll have to print out the fingers. For the big pin that connects the fingers to the palm, I'm planning on using filament as the pin. The filament I use has a thickess of 1.75mm. Although the holes of the finger are 2mm, I can use filament because of it's tendancy to bend due to being on a spool.
+
+Time for forearm print take 2. Slicer says it'll take 60g, so let's print it. It'll finish around midnight so I'll update you then.
+
+### Code
+AHHHH NO MORE CODE PLEASE.
+
+Welcome back to the_idk's coding session where you see a beginner absolutely suffer through coding in python.
+
+Today, I want to debug my code from yesterday and finally have hand tracking.
+
+OMG IT FINALLY WORKS, I JUST MADE A TYPO!!! So a few minutes ago, I gave up and put my code into claude, and it told me I just made a one word mistake. I'm kinda disappointed but atleast it finally detects my hand.
+
+![image](/notebook/assets/landmarkDetection.png)
+
+This is so cool. I can't believe it actually works. 
+
+Next, I'll move on to detecting whether each of my fingers are open are closed, then sending that to my microcontroller. I'll do this by comparing the node distance between each finger tip and and its respective MCP. The MCP is the joint that connects the finger to the palm.
+
+## April 5th, 2026 - Sunday
+### Build
+Today, I want to assemble the whole hand and callibrate all the servos.
+
+First, I need to assemble the hand. I inserted all the pins between each finger segment, binding the fingers together. After repeating that 5 times, I took a spool of filament and threaded it through MCPs. I also put in a pin for the thumb's MCP. 
+
+After that, I threaded and tied all of the fishing line and elastic cord. I made sure it leave a lot of extra fishing line to ensure I'd have enough to tie onto the servo. 
+
+Third, I threaded all the fishing line into the hole in the forearm and bolted down the hand. 
+
+Then, I bolted down the servo mount onto the forearm. I honestly think that I dont even need to screw it down, but it's better for strength and security.
