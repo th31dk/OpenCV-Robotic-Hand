@@ -494,6 +494,18 @@ First, I need to assemble the hand. I inserted all the pins between each finger 
 
 After that, I threaded and tied all of the fishing line and elastic cord. I made sure it leave a lot of extra fishing line to ensure I'd have enough to tie onto the servo. 
 
-Third, I threaded all the fishing line into the hole in the forearm and bolted down the hand. 
+Third, I threaded all the fishing line into the hole in the forearm and bolted down the hand. At first, I used a M3x16mm bolt and it didn't go down all the way. During my attempt of removing the screw, I stripped it's head. I had to use pliers to get the bolt out. I then replaced it with a M3x8mm bolt which fit perfectly.
+![image](/notebook/assets/fullarm_v1_3.png)
 
 Then, I bolted down the servo mount onto the forearm. I honestly think that I dont even need to screw it down, but it's better for strength and security.
+![image](/notebook/assets/fullarm_v1_4.png)
+
+### Testing
+After I was done, I wanted to test each indivudual servo to see if it was working. I hooked up the top servo to my Arduino and PSU. However, when I said "T90," it spun, but started twitching like crazy. Looking it up, apparently I need to have a common ground between the servo and Arduino. This basically means that I need to bridge the grounds of my PSU and Arduino Uno. This was hard, since I somehow lost my breadboard, which my already sketchy wiring was going to be way worse.
+
+After connecting the grounds, it seemed to work perfectly. I sent "T0," and it turned to 0 degrees. But when I sent "T180," it turned way past 180. Once again, my best friend, Google, comes to the rescue! The function, "servo.write(angle)," only works with 180 degree servos like the SG90. The servo library, however, does have another function, "servo.writeMicroseconds(Microseconds)". I'll have to tune the PWM signal now, not the angle. Which also means I have to rewrite some code. AHHHHHHHHHHHHHHHH
+
+April 6th, 2026 - Monday
+Well, yesterday was the end of my spring break. I was hoping to finish this project but I guess not. 
+
+I worked on the README and BOM of this project.

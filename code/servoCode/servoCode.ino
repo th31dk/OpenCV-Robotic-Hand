@@ -50,8 +50,9 @@ void loop() {
         Serial.print("Pinky");
         pinkyServo.write(servoAngle);
       }
+    Serial.println(servoAngle);
     }
   
-    Serial.println(servoAngle);
+    
   
 }
