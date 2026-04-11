@@ -23,7 +23,7 @@ Above, you can see a chart that shows the different muscles controlling your fin
 
 ### Build
 I sliced the 3D model in Bambu Slicer and used lightning infill because the printed model is just a prototype. I used black PLA for this, and it took approximately 20 minutes.  
-After I was done printing it, I aligned all the segments together and put in a M3x20mm screw to act as the pin for the hinges. The screw didn't fit in that well so I drilled the hole with a 3mm drill bit. Tying the fishing line was definetly the hardest part because it didn't want to tie no matter what.
+After I was done printing it, I aligned all the segments together and put in a M3x20mm screw to act as the pin for the hinges. The screw didn't fit in that well so I drilled the hole with a 3mm drill bit. Tying the fishing line was definitely the hardest part because it didn't want to tie no matter what.
 
 ### Testing and Identifying Problems
 #### Problem 1
@@ -44,7 +44,7 @@ Hey guys! Today, I worked on the second prototype of the finger, addressing some
 Instead of positioning the pin at the very bottom of each joint, I can put it half way. This way, the flat part below the pin will stop the finger from being bent back. 
 
 ### Build
-Once again, I sliced it in Bambu studio and kept all the settings the same. However, since theres now a holder for the elastic cord, I had toprint it sideways with support. I used PETG for support interface to make sure the support is easy to remove. 
+Once again, I sliced it in Bambu studio and kept all the settings the same. However, since theres now a holder for the elastic cord, I had to print it sideways with support. I used PETG for support interface to make sure the support is easy to remove. 
 After I was done printing it, I assembled it again. 
 
 ### Testing and Identifying Problems
@@ -63,21 +63,21 @@ I found these small metal pins on Amazon that should fit the fingers perfectly.
 ![image](/notebook/assets/metalDowels.jpg)
 I might also consider printing plastic rods instead to save cost. 
 ## February 8th, 2026 - Sunday
-Today, I recieved the new servos and tested them. The servos ended up working fine and were perfect for the job.
+Today, I received the new servos and tested them. The servos ended up working fine and were perfect for the job.
 
 ## February 9th, 2026 - March 12th, 2026
 I worked on filling out the notebook. I also took a break from this project at this time.
 
 ## March 13th, 2026 - Friday - ~1 hour of progress
 ### Design
-Today, I modeled the DS3225 servo so I could have an easy refrence when modeling the palm for the hand. 
+Today, I modeled the DS3225 servo so I could have an easy reference when modeling the palm for the hand. 
 ![image](/notebook/assets/DS3225.webp)
 ## March 14th, 2026 - Saturday - ~1 hour of progress
 ### Identifying Problems
 When testing the fingers that I modeled, I noticed that I had to pull on the string a lot for the fingers to fully close. There was no way that the motors could close that far.
 
 ### Solution
-Since the circumfrence of a circle is always larger than  it's diameter, I decided to model a tiny spool, which would help with increasing the length of string it could pull. 
+Since the circumference of a circle is always larger than  it's diameter, I decided to model a tiny spool, which would help with increasing the length of string it could pull. 
 
 ## March 15th, 2026 - Sunday - ~3.5 hours
 ### Design
@@ -219,7 +219,7 @@ I printed all the segments and the pin out of Black PLA. It didn't really work a
 I think this is because I printed it in a different orientation that I usually print it. I tried this different orientation because I didn't want to use support, but I will print again and see.
 
 #### Testing and Identifying Problems
-It worked! You should definetly print circles and arcs parallel to the print bed for better accurany. 
+It worked! You should definitely print circles and arcs parallel to the print bed for better accuracy. 
 
 Here's the assembled finger!
 ![image](/notebook/assets/fingerPrototype_v4_full_2.jpg)
@@ -236,7 +236,7 @@ poof
 
 ![image](/notebook/assets/fullHandprototype_v2_1.png)
 
-The hardest part was definetly making the holes for routing the fishing line. It took me a while for me to line the two holes up perfectly. 
+The hardest part was definitely making the holes for routing the fishing line. It took me a while for me to line the two holes up perfectly. 
 
 I still need to make a way for the elastic cord to be routed and the thumb.
 
@@ -249,14 +249,14 @@ I decided not to print out the palm yet because it takes around 50g of filament 
 I think that's it for today! I'll probably code a little bit over the week and continue the design over the next weekend. I also have spring break next week so I hope to finish the design and get a lot of the code done then. 
 
 ## March 29th, 2026 - Sunday
-Hi guys! Today, I'll design the thumb of the hand. Like I mentioned earlier, this will likely be the hardest part of the hadn to model simply because of the different mechanism.
+Hi guys! Today, I'll design the thumb of the hand. Like I mentioned earlier, this will likely be the hardest part of the hand to model, simply because of the different mechanism.
 
 ### Design
 ![image](/notebook/assets/thumbPrototype_v1_3_1.png)
 
 Here's my first prototype! modeled the first segment at an angle because your thumb's first section is shaped like a triangle. kinda...
 
-I had a big of trouble modeling the holes because they didn't enter or exit on the same axis. However, I learned about the sweep cut tool in SolidWorks. It basically stiches your two holes on different faces together.
+I had a big of trouble modeling the holes because they didn't enter or exit on the same axis. However, I learned about the sweep cut tool in SolidWorks. It basically stitches your two holes on different faces together.
 
 Thinking I had a good design, I decided to build the full thumb in assembly. I decided to use segments from the other fingers. 
 ![image](/notebook/assets/thumbPrototype_v1_full_1.png)
@@ -289,7 +289,7 @@ Through my research, I figured out how to have the microcontroller read my input
 I've referenced the example code in the Arduino docs and wrote code off of that to test out the serial monitor. The code is supposed to return the value that I put in, but it doesn't do that. Instead it returns a random string of numbers when I do. For example, when I input "1", it spits out "49 10"
 ![image](/notebook/assets/servoCode_1.png)
 
-Okay... I've figured it out. After looking at the Arduino forums and docs, I found that I need to use "serial.parseInt" instead of "serial.read". Basically, "serial.parseInt" reads the whole string of numbers I give it and keeps it in deicmal form. "serial.read" on the other hand, only reads the first number and converts it to ASCII.
+Okay... I've figured it out. After looking at the Arduino forums and docs, I found that I need to use "serial.parseInt" instead of "serial.read". Basically, "serial.parseInt" reads the whole string of numbers I give it and keeps it in decimal form. "serial.read" on the other hand, only reads the first number and converts it to ASCII.
 
 After testing it, it now outputs the right numbers, but outputs a 0 after everytime I input. After reading a bit more, I found that I need to change the settings from "New Line" to "No Line Ending".
 
@@ -304,19 +304,19 @@ After building the thumb, I found that the holes from segments 2 and 3 aren't al
 
 In the assembly, the fingers weren't lining up either, so it wasn't a 3D printer problem. 
 
-Turns out, I've been using the same cut path/angle for both the elastic cord and the fishing line. This is a problem because the hole for the elastic cord is longer than the hole for the fishing line. Although the path was perfact for the elastic cord, it wasn't for the fishing line. 
+Turns out, I've been using the same cut path/angle for both the elastic cord and the fishing line. This is a problem because the hole for the elastic cord is longer than the hole for the fishing line. Although the path was perfect for the elastic cord, it wasn't for the fishing line. 
 
 To solve this, I created a new path just for the fishing line. Now they line up perfectly in the assembly.
 
-Another problem I faced when building the finger was the tolerances on the pin holes between each finger segment. The pins would just fall straight out. To solve this, I will change the rod diamenter from 2mm to 2.2mm.
+Another problem I faced when building the finger was the tolerances on the pin holes between each finger segment. The pins would just fall straight out. To solve this, I will change the rod diameter from 2mm to 2.2mm.
 
-I also wanted to start building the electrical circuit for testing. Turns out, I was running super low on male to male dupont wires, so I couldn't color coordinate the wires well. I also accidentally released the magic smoke on one of those breadboard power supplies.
+I also wanted to start building the electrical circuit for testing. Turns out, I was running super low on male to male Dupont wires, so I couldn't color coordinate the wires well. I also accidentally released the magic smoke on one of those breadboard power supplies.
 
 Anyways, here's the final product:
 
 ![image](/notebook/assets/electronics_1.jpg)
 
-Underwhelming? Yeah I swear I'll clean it up one day. The dupont wires are coming on Friday, so I want to complete the code tomorrow. I'll also print the palm tomorrow. 
+Underwhelming? Yeah I swear I'll clean it up one day. The Dupont wires are coming on Friday, so I want to complete the code tomorrow. I'll also print the palm tomorrow. 
 
 ## April 2nd, 2026 - Thursday
 Hello! Today, I'll finish the servo testing/callibration code.
@@ -378,7 +378,7 @@ I KEEP MAKING THE SAME MISTAKES ON EVERY PRINTTTTTTTTTTT. I forgot to account fo
 
 ![image](/notebook/assets/forearm_v1_7.png)
 
-The fix is rather simple: just narrow down the main body of the servo holder. It's kind of annoying that I made this mistake but atleast it's a fairly easy fix.
+The fix is rather simple: just narrow down the main body of the servo holder. It's kind of annoying that I made this mistake but at least it's a fairly easy fix.
 
 Time to send the print to the printer!
 ### Code
@@ -396,27 +396,27 @@ After the fix, everything showed up fine! Until... I wanted to close the window,
 
 Once again, Google came to the rescue and told me how to put in a line that would detect whenever the window is closed and terminate the running code.
 
-AFTER ANOTHER GOOGLE SEARCH, I found out that "waitkey(1)" doesn't just wait until 1ms has passed, it outputs the ASCII code of the key that is pressed within that period! So, I just need to add an if statement that checks if that ASCII code is equivilent to, lets just say, the escape key. When I press the escape key, it should stop the program entirely.
+AFTER ANOTHER GOOGLE SEARCH, I found out that "waitkey(1)" doesn't just wait until 1ms has passed, it outputs the ASCII code of the key that is pressed within that period! So, I just need to add an if statement that checks if that ASCII code is equivalent to, lets just say, the escape key. When I press the escape key, it should stop the program entirely.
 
 And it works!
 
 I still have a bit of time to work on the project today, so I'll get started on the hand tracking.
 
-After some research, I found that there are two ways to do hand tracking, contour detection and landmark detection. contour detection works by detecting colors similar to the target. So it's kinda like a greenscreen thing. Landmark detection, on the other hand, works by plotting points at specific places on the target. So for your hands, it would plot points on each of your finger joints. I'll probably choose landmark detection because it seems cooler and more accurate. 
+After some research, I found that there are two ways to do hand tracking, contour detection and landmark detection. contour detection works by detecting colors similar to the target. So it's kinda like a green screen thing. Landmark detection, on the other hand, works by plotting points at specific places on the target. So for your hands, it would plot points on each of your finger joints. I'll probably choose landmark detection because it seems cooler and more accurate. 
 
 For landmark detection, I can use a library or train my own model. Since I'm still a beginner and short on time, I'll choose an existing library. One of these libraries is google's Media Pipeline. On it's website it says that its compatible with python, which is perfect for my project.
 
 ![image](/notebook/assets/MediaPipe.png)
 
-Okay, apparently OpenCV outputs in BGR and mediapipe reads in RGB, so I'll need to convert it. In the while loop, I'll add a function that automatically converts each frame after it is taken. I hope it doesn't add lag to the stream.
+Okay, apparently OpenCV outputs in BGR and MediaPipe reads in RGB, so I'll need to convert it. In the while loop, I'll add a function that automatically converts each frame after it is taken. I hope it doesn't add lag to the stream.
 
 Something that I don't like about OpenCV is that it takes a long time to boot up after I run the code. I'm estimating around 1-2 minutes. I'm not sure what to do about it but yeah.
 
-Anyways, I've convverted the BGR to RGB so I'm kinda curious what everything will look like. Well, after I started the code, it looks identical so I'm not sure. Then I realized I forgot to change the image it's showing to the RGB feed. 
+Anyways, I've converted the BGR to RGB so I'm kinda curious what everything will look like. Well, after I started the code, it looks identical so I'm not sure. Then I realized I forgot to change the image it's showing to the RGB feed. 
 
 WOW it looks weird. Everythings more blue now instead of red. Anyways, back to coding.
 
-All of the code that people have used in the past uses a different type of mediapipe which uses different functions so it looks like I'm on my own.
+All of the code that people have used in the past uses a different type of MediaPipe which uses different functions so it looks like I'm on my own.
 
 This project is honestly a lot harder than I thought it'd be but I think I'm on the final stretch.
 
@@ -424,7 +424,7 @@ After running my code, I ran into the problem of "serial.serialutil.SerialExcept
 
 After running into error after error, I decided to just use mediapipe's example code as a base to start off of.
 
-Right off the bat, I was running into less errors. My goal is just to feed the camera stream into mediapipe's hand detection function, and it should just spit out a video that has hand detection. However, like everything, it isn't as simple as it seems. Running into more errors, I realized I need to have the bundle downloaded. After downleading the bundle, I still ran into more errors with the path to the bundle not being right, despite it being right. 
+Right off the bat, I was running into less errors. My goal is just to feed the camera stream into mediapipe's hand detection function, and it should just spit out a video that has hand detection. However, like everything, it isn't as simple as it seems. Running into more errors, I realized I need to have the bundle downloaded. After downloading the bundle, I still ran into more errors with the path to the bundle not being right, despite it being right. 
 
 I decided to just go to bed since I was just tired of the errors. Maybe it'll fix its self tomorrow.
 
@@ -467,7 +467,7 @@ I learned how to use 3D sketching to draw out proper paths for the sweep cuts. 3
 
 After slicing it it came out to 22g, cheaper than ever! It's probably because I used wider tunnels this time.
 
-Next, I'll have to print out the fingers. For the big pin that connects the fingers to the palm, I'm planning on using filament as the pin. The filament I use has a thickess of 1.75mm. Although the holes of the finger are 2mm, I can use filament because of it's tendancy to bend due to being on a spool.
+Next, I'll have to print out the fingers. For the big pin that connects the fingers to the palm, I'm planning on using filament as the pin. The filament I use has a thickness of 1.75mm. Although the holes of the finger are 2mm, I can use filament because of it's tendency to bend due to being on a spool.
 
 Time for forearm print take 2. Slicer says it'll take 60g, so let's print it. It'll finish around midnight so I'll update you then.
 
@@ -478,7 +478,7 @@ Welcome back to the_idk's coding session where you see a beginner absolutely suf
 
 Today, I want to debug my code from yesterday and finally have hand tracking.
 
-OMG IT FINALLY WORKS, I JUST MADE A TYPO!!! So a few minutes ago, I gave up and put my code into claude, and it told me I just made a one word mistake. I'm kinda disappointed but atleast it finally detects my hand.
+OMG IT FINALLY WORKS, I JUST MADE A TYPO!!! So a few minutes ago, I gave up and put my code into Claude, and it told me I just made a one word mistake. I'm kinda disappointed but at east it finally detects my hand.
 
 ![image](/notebook/assets/landmarkDetection.png)
 
@@ -488,7 +488,7 @@ Next, I'll move on to detecting whether each of my fingers are open are closed, 
 
 ## April 5th, 2026 - Sunday
 ### Build
-Today, I want to assemble the whole hand and callibrate all the servos.
+Today, I want to assemble the whole hand and calibrate all the servos.
 
 First, I need to assemble the hand. I inserted all the pins between each finger segment, binding the fingers together. After repeating that 5 times, I took a spool of filament and threaded it through MCPs. I also put in a pin for the thumb's MCP. 
 
@@ -501,7 +501,7 @@ Then, I bolted down the servo mount onto the forearm. I honestly think that I do
 ![image](/notebook/assets/fullarm_v1_4.png)
 
 ### Testing
-After I was done, I wanted to test each indivudual servo to see if it was working. I hooked up the top servo to my Arduino and PSU. However, when I said "T90," it spun, but started twitching like crazy. Looking it up, apparently I need to have a common ground between the servo and Arduino. This basically means that I need to bridge the grounds of my PSU and Arduino Uno. This was hard, since I somehow lost my breadboard, which my already sketchy wiring was going to be way worse.
+After I was done, I wanted to test each individual servo to see if it was working. I hooked up the top servo to my Arduino and PSU. However, when I said "T90," it spun, but started twitching like crazy. Looking it up, apparently I need to have a common ground between the servo and Arduino. This basically means that I need to bridge the grounds of my PSU and Arduino Uno. This was hard, since I somehow lost my breadboard, which my already sketchy wiring was going to be way worse.
 
 After connecting the grounds, it seemed to work perfectly. I sent "T0," and it turned to 0 degrees. But when I sent "T180," it turned way past 180. Once again, my best friend, Google, comes to the rescue! The function, "servo.write(angle)," only works with 180 degree servos like the SG90. The servo library, however, does have another function, "servo.writeMicroseconds(Microseconds)". I'll have to tune the PWM signal now, not the angle. Which also means I have to rewrite some code. AHHHHHHHHHHHHHHHH
 
@@ -509,3 +509,18 @@ April 6th, 2026 - Monday
 Well, yesterday was the end of my spring break. I was hoping to finish this project but I guess not. 
 
 I worked on the README and BOM of this project.
+
+## April 10th, 2026 - Friday
+Hey guys! The breadboards came earlier this week but I didn't come around to wiring up the hand until today. My wiring is kinda messy but it got the job done.
+
+![image](/notebook/assets/electronics_2.jpg)
+
+Unfortunately, one of the servos I bought spins in the opposite direction, so I'll have to swap its places with another servo, probably the middle one. It's a bit inconvenient but at least I don't have to buy a new servo.
+
+I calibrated the servos that turn in the right direction. 1845 microseconds seems to be perfect for turning 180 degrees. 
+
+Dang I wish VS Code had a spell check for markdown, I'm probably making so many spelling mistakes in this journal lol. 
+
+WAIT THERE'S AN EXTENSION!!! Okay, so I just installed it and it shocked me how many spelling mistakes there are in my journal. I'm glad I downloaded it.
+
+That's it for tonight, I'll hopefully finish calibrating the servos tomorrow.

@@ -32,23 +32,23 @@ void loop() {
     
     if (finger == 'T') {
       Serial.print("Thumb");
-      thumbServo.write(servoAngle);
+      thumbServo.writeMicroseconds(servoAngle);
     }
       else if (finger == 'I') {
         Serial.print("Index"); 
-        indexServo.write(servoAngle);
+        indexServo.writeMicroseconds(servoAngle);
       }
       else if (finger == 'M') {
         Serial.print("Middle");
-        middleServo.write(servoAngle);
+        middleServo.writeMicroseconds(servoAngle);
       }
       else if (finger == 'R') {
         Serial.print("Ring");
-        ringServo.write(servoAngle);
+        ringServo.writeMicroseconds(servoAngle);
       }
       else if (finger == 'P') {
         Serial.print("Pinky");
-        pinkyServo.write(servoAngle);
+        pinkyServo.writeMicroseconds(servoAngle);
       }
     Serial.println(servoAngle);
     }
