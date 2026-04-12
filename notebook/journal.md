@@ -505,7 +505,7 @@ After I was done, I wanted to test each individual servo to see if it was workin
 
 After connecting the grounds, it seemed to work perfectly. I sent "T0," and it turned to 0 degrees. But when I sent "T180," it turned way past 180. Once again, my best friend, Google, comes to the rescue! The function, "servo.write(angle)," only works with 180 degree servos like the SG90. The servo library, however, does have another function, "servo.writeMicroseconds(Microseconds)". I'll have to tune the PWM signal now, not the angle. Which also means I have to rewrite some code. AHHHHHHHHHHHHHHHH
 
-April 6th, 2026 - Monday
+## April 6th, 2026 - Monday
 Well, yesterday was the end of my spring break. I was hoping to finish this project but I guess not. 
 
 I worked on the README and BOM of this project.
@@ -524,3 +524,64 @@ Dang I wish VS Code had a spell check for markdown, I'm probably making so many 
 WAIT THERE'S AN EXTENSION!!! Okay, so I just installed it and it shocked me how many spelling mistakes there are in my journal. I'm glad I downloaded it.
 
 That's it for tonight, I'll hopefully finish calibrating the servos tomorrow.
+
+## April 11th, 2026 - Saturday
+Hey guys! Today I started by swapping the counter clockwise servo with the middle finger servo. 
+
+Next, I want to make some adjustments to the python script. Since I changed the servo.write to servo.writemicroseconds, I need to swap out the 180 for 1845. 
+
+Now, I want to test if the servos actually spin when I start the program.
+
+Ther servos did not even move. After an hour of debugging, I finally found out that I need to use Serial.parseInt(SKIP_NONE). I think the parseInt was timing out so it didn't read all of the digits I was sending it. 
+
+Now, I just need to tie down all the fishing line to the servo horns. 
+
+You know what's funny about hardware? Everytime you think you're close to finishing your project, there's another problem that shows up out of nowhere. While I was trying to tie down the string to the servo, I found it very hard to tension the wire. Additionally, the wire is kind of stretchy, that didn't help with the tension either. A few weeks ago, I made a spool that attaches to the servo horn, but that design isn't good so I'll redesign it. For this new design, I want to take inspiration from [Made by Horizon](https://www.youtube.com/watch?v=aHFo-7ZK1Bk&t=697s), who made a really good spool roller for his hand. His spool design fits better onto the servo horns because it sits on top of it instead of in it, like mine does. His two sided design also makes it easier to print and construct.
+
+![image](/notebook/assets/Horn_v2_1.png)
+
+As opposed to Made by Horizon's project, I used one hole because I am not running a dual string system like he is. 
+
+I'll be printing this prototype on my newly fixed Ender 3 because I'm printing something on my P1S right now. 
+
+I also realized that I'll need to update the dimensions of the forearm so that it can freely rotate. The current backplate of the forearm doesn't let the horn rotate 360 degrees. Instead, it just blocks it from moving.
+
+Actually... I think I'll just see if I can get away with not redesigning the forearm backplate.
+
+After the the I printed out one of the spools, I noticed that it was way too thin. To fix this, I extruded the inner circle 3mm and the outer circle to 2mm.
+
+Unfortunately, the old spools were so thin that they were cemented to the glass bed. It took some time, but I eventually got the spools off with my fingers. I then started the print using black PLA. Almost instantly, the print failed. I cleared the print bed and tried again... and again... and again. I had to reset it so many times that my P1S was done printing. I ended up just printing it on my P1S and it came out perfectly.
+
+While attaching it to the servo, I found it very hard to thread the fishing line through the small hole. I also feel like the circumference was too small so the fishing line didn't really get pulled enough.
+
+I designed a new one with a bigger thread hole and a larger circumference. However, this means I can't get away without making a new forearm back plate. Before designing a new backplate though, I want to test if this new spool is better.
+
+While testing, I noticed that OpenCV would freeze up when I put my hand in front of my camera. It doesn't completely freeze up, but it works very slowly. To solve this, I decided to do some research. The first fix was to lower the camera resolution. 4k webcams, like mine, don't improve the accuracy of mediapipe much, so it's just a performance sacrifice. I lowered by resolution to 480p, hoping for a fix. I also put in the "cv2.CAP_DSHOW" so that the program would boot up faster.
+
+I did fix the slow boot up problem, but the lag was still there.
+
+AHA! I found the fix! First, I fixed the code to only send updates to the Arduino if the my hand changed from open to close, or from closed to open. Also, I removed the delay I placed in the Arduino code that I forgot about. Finally, I changed the camera from 2fps to 4fps. 
+
+Actually? I want to change it to 60fps. I don't think I'll have lag problems anymore. 
+
+![image](/notebook/assets/landmarkDetection_2.png)
+
+Next, I need to move on to my most dreaded task... Redesigning the forearm. I'll make a list of improvements I need to make below:
+
+1. Make it wider, 10mm?
+    - This is a maybe fix. I want to make the complete assembly first to see if I really need it.
+2. Move hand to the front
+    - The line is rubbing against sharp corners. 
+    - It's also very hard to thread the fishing line if one is broken/needs to be replaced
+3. Make the forearm deeper.
+    - I'm not sure by how much yet. I haven't calculated it yet.
+
+I just realized I have to reprint the whole forearm. Reminder to everyone making a project and myself. **ALWAYS** make a full assembly of your project before printing the parts out. You will make a mistake that you'll only find out near the end of your project. 
+
+I can tell that I'm almost done with this project. But everytime I feel like that there's always another bug/design issue that I missed. 
+
+Back to making the assembly. I made this servo model.
+
+![image](/notebook/assets/servomodel_1.png)
+
+Wait it's past midnight so I'll start another journal entry and push this to Github.

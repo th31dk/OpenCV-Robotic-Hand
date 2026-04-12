@@ -22,13 +22,14 @@ pinkyServo.attach(10);
 
 // Serial Monitor
 Serial.begin(9600);
+Serial.setTimeout(10);
 Serial.print("Ready!");
 }
 
 void loop() {
   if (Serial.available() > 0) {
     char finger = Serial.read();
-    int servoAngle = Serial.parseInt();
+    servoAngle = Serial.parseInt(SKIP_NONE);
     
     if (finger == 'T') {
       Serial.print("Thumb");
