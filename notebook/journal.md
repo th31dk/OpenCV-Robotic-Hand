@@ -556,7 +556,7 @@ While attaching it to the servo, I found it very hard to thread the fishing line
 
 I designed a new one with a bigger thread hole and a larger circumference. However, this means I can't get away without making a new forearm back plate. Before designing a new backplate though, I want to test if this new spool is better.
 
-While testing, I noticed that OpenCV would freeze up when I put my hand in front of my camera. It doesn't completely freeze up, but it works very slowly. To solve this, I decided to do some research. The first fix was to lower the camera resolution. 4k webcams, like mine, don't improve the accuracy of mediapipe much, so it's just a performance sacrifice. I lowered by resolution to 480p, hoping for a fix. I also put in the "cv2.CAP_DSHOW" so that the program would boot up faster.
+While testing, I noticed that OpenCV would freeze up when I put my hand in front of my camera. It doesn't completely freeze up, but it works very slowly. To solve this, I decided to do some research. The first fix was to lower the camera resolution. 4k webcams, like mine, don't improve the accuracy of MediaPipe much, so it's just a performance sacrifice. I lowered by resolution to 480p, hoping for a fix. I also put in the "cv2.CAP_DSHOW" so that the program would boot up faster.
 
 I did fix the slow boot up problem, but the lag was still there.
 
@@ -585,3 +585,39 @@ Back to making the assembly. I made this servo model.
 ![image](/notebook/assets/servomodel_1.png)
 
 Wait it's past midnight so I'll start another journal entry and push this to Github.
+
+## April 12th, 2026 - Sunday
+While testing my servos, I found that the monofilament fishing line I was using was deforming after stretching. This caused my robot to lose a ton of tension and not work anymore. Doing some research, I found that other people doing my project used braided fishing line instead. It's roughly the same cost, stronger, and not stretchy at all. 
+
+Looking for the cheapest option, I went with [this](https://a.co/d/0gZXuDRI). It has 100lbs tensile strength, perfect for this project. 
+
+Anyways, it's getting late, so I'll continue this in the morning. 
+
+Good morning guys! Today, I want to finish the new assembly and print out the new parts I'll need. 
+
+I started by finishing the assembly of the servo. 
+![image](/notebook/assets/servomodel_2.png)
+
+As you can see, I've modeled the original horn onto it. 
+
+Next, I must redesign the servo mounts. 
+
+I made each mount taller by around 18mm so that the horns can spin freely. 
+
+![image](/notebook/assets/forearm_v2_1.png)
+
+I also added the little wire stub that every servo has because I keep forgetting to account for that in my 3d prints.
+
+Anyways, I just need to add the mount for the fifth servo and the screw holes and then I can remodel the back plate. 
+
+![image](/notebook/assets/forearm_v2_2.png)
+
+As you can see, I also made the legs a bit thinner to save on filament and time. Now I need to model the back plate. 
+
+Here's the full new assembly of the arm!
+
+![image](/notebook/assets/handAssembly_v2.png)
+
+I don't like how there's so much behind it but I'm not sure how I would correct it. Other than that, I addressed all of my fixes. Moving the hand ensures that the every fishing line can reach each spool successfully. In my old design, the fishing line would run and rub into something. This adds friction and wears down the line. 
+
+Anyways, I'm gonna print it and reconstruct the hand once the fishing line comes. 

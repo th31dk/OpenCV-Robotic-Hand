@@ -51,7 +51,7 @@ def servo_angles(results):
         else:
             curled = hand[tip].y > hand[mcp].y
 
-        angle = (2500 if letter == 'M' else 1845) if curled else 0
+        angle = (2500 if letter == 'M' else 2500) if curled else 0
 
         if prev_state.get(letter) != angle:
             prev_state[letter] = angle
