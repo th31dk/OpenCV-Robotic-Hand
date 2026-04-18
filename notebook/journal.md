@@ -621,3 +621,29 @@ Here's the full new assembly of the arm!
 I don't like how there's so much behind it but I'm not sure how I would correct it. Other than that, I addressed all of my fixes. Moving the hand ensures that the every fishing line can reach each spool successfully. In my old design, the fishing line would run and rub into something. This adds friction and wears down the line. 
 
 Anyways, I'm gonna print it and reconstruct the hand once the fishing line comes. 
+
+## April 14th, 2026 - Tuesday
+The fishing line arrived today! Right off the bat, I could tell that it was a lot stronger than the monofilament line I was using before. It also had no elasticity at all! When I was trying to cut it, it took a lot more effort. All in all, I think buying the new fishing line was a good choice. 
+
+![image](/notebook/assets/newfishingline.png)
+
+I disassembled the forearm and tried to restring the fishing line, but the new fishing line is double the thickness of the monofilament one. I think I'll have to expand the holes to 2mm instead of 1mm.
+
+I only printed one finger of the new fingers so that I don't waste filament in case the holes are still too small. Thankfully, the holes were at the perfect size. The new finger feels a lot sturdier with the new fishing line as well. I dont know why.
+
+![image](/notebook/assets/fingerPrototype_v4_full_3.png)
+
+## April 13th, 2026 - Wednesday
+Hey guys! Unfortunately, I was not able to work on the hand that much today because I came home really late today.
+
+However, I did finish the finger redesigns by resizing the fishing line hole in the thumb segment. It was pretty easy since the paths were already planned out.
+
+I sliced it in the slicer and used Bambu's Support for PLA as a support interface. I always either use Support for PLA or PETG as a support interface because it creates a smooth surface for the hinge mechanism.
+
+![image](/notebook/assets/slicer_1.png)
+
+As I'm writing this, I forgot to plug in the PTFE tube from the AMS to the main feeding tube for the extruder.  Gladly, I caught it early before it unspooled all the filament. 
+
+Anyways, that's it for today! Waiting for the prints will take a while.
+
+## April 16th, 2026
