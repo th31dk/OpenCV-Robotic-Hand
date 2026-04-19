@@ -633,7 +633,7 @@ I only printed one finger of the new fingers so that I don't waste filament in c
 
 ![image](/notebook/assets/fingerPrototype_v4_full_3.png)
 
-## April 13th, 2026 - Wednesday
+## April 15th, 2026 - Wednesday
 Hey guys! Unfortunately, I was not able to work on the hand that much today because I came home really late today.
 
 However, I did finish the finger redesigns by resizing the fishing line hole in the thumb segment. It was pretty easy since the paths were already planned out.
@@ -647,3 +647,76 @@ As I'm writing this, I forgot to plug in the PTFE tube from the AMS to the main 
 Anyways, that's it for today! Waiting for the prints will take a while.
 
 ## April 16th, 2026
+What's up guys! Today, I worked on reconstructing the hand. 
+
+I first started by removing all of the support from the newly printed fingers. They basically fell of because of the support interface so it was really easy.
+
+I then finished disassembling the old fingers so that I could reuse the old pins. I didn't want to reprint all the pins and waste filament. After I was done with that, I connected all the segments together. 
+
+![image](/notebook/assets/fullHandprototype_v2_3.png)
+
+I strung up all the elastic cord and then it was done! 
+
+Next, I needed to finish reconstructing the forearm. I screwed in the servos into the new mount but my electric drill's battery was dying so I took a break to eat dinner while it charged.
+
+After dinner, I finished screwing everything in and it looked really chunky. I'll fix this in future iterations.
+
+Since the overall construction of the arm was done, I moved on to trying out the new fishing line. I had a bit of trouble tying the fishing line because it wouldn't stay tensioned. I eventually gave up and just decided to turn on the servo without fully tensioning it. To my surprise, it worked really well! The finger was able to pull all the way down.
+
+![image](/notebook/assets/fullarm_v2_1.jpg)
+
+Well that's it for today!
+
+## April 17th, 2026 - Friday
+It's finally the weekend! I can't wait to finish up this project. 
+
+Now, something I didn't address yesterday was the flex of the back plate. When the string is pulled by the servos, the back plate tends to flex forward. On the old version, it didn't face this problem because it was not only smaller, but had a bit of support on the side. So to stop the flexing on the new design, I will model and print out supports for the top.
+
+I just ended up extruding a long rectangular prism. I decided on a simple design because I dind't want to overcomplicate my current project too much. Here's the updated assembly!
+
+![image](/notebook/assets/fullarm_v2_2.png) 
+
+Like always, I'll print it in black PLA. 
+
+I printed it out, but one of the sticks had a bit of problems with it's first layers. Additionally, everytime it would just fall out of the forearm everytime I try to fit it in. 
+
+So, I redesigned it. I decided to use the existing screw holes from the hand. Now, it will mount securely onto the forearm, preventing any slippage. 
+
+![image](/notebook/assets/support_1.png)
+
+![image](/notebook/assets/fullarm_v2_3.png)
+
+Earlier, I noticed that the string was losing tension, probably from my bad knots, so while I waited for the new support to print, I tried to untie it. However, I eventually gave up because it was taking too long and just cut it instead. Later, I plan to retie it tighter. 
+
+## April 18th, 2026 - Saturday
+Today I want to mount the support piece and redesign the spools. 
+
+Installing the support was pretty easy.
+
+I want to redesign the spool a little bit because the string was hard to attach when it was connected to the horn. The horn gets in the way of my fingers so I have to awkwardly push it in. 
+
+For my first prototype, I made the side thinner again and a bit bigger. I can now use a 4mm hole instead of a 2mm, making it easier to push the string in. I also placed the hole for the string behind the horn instead of in front of it so it's now easier to push it in. 
+
+![image](/notebook/assets/Horn_v2_2.png)
+
+I sliced it at 100% infill because of how thin it is.
+
+I screwed in the new horn once it was finished and it was really easy to tie down the fishing line. I started by setting every servo to 0 degrees. Then I screw down the new horn with the fishing line facing in the directions of the fingers. I make a loop around the spool so that the fishing line has a path to go through. Finally I tie the fishing line down.
+
+![image](/notebook/assets/forearm_v2_3.png)
+
+When testing, the hand worked perfectly with no problems! I'm finally so close to finishing! I'm so happy!
+
+Next, I need to print out the rest of the spools so I can finish the rest of the hands
+
+Sooooo I completely forgot that I need to calibrate each servo to a certain angle. The thumb servo went to it's max and broke my servo mount. So I'll have to reprint my servo mount. 
+
+![image](/notebook/assets/broken_1.jpg)
+
+I hope this doesnt mean I have to retie all the fishing line...
+
+After the new mount finishes printing, I will calibrate all the servos.
+
+Ayyy it's done printing!
+
+I mounted all the servos to the servo mount and then I started calibrating. 

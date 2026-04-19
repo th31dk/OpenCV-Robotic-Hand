@@ -26,6 +26,16 @@ FINGER_LETTERS = ['T', 'I', 'M', 'R', 'P']
 FINGER_TIPS = [4, 8, 12, 16, 20]
 FINGER_MCPS = [2, 5, 9, 13, 17]
 
+# calibrate this
+FINGER_ANGLES = {
+    'T': 1500,
+    'I': 1800,
+    'M': 2500,
+    'R': 0,
+    'P': 0,
+}
+
+
 def draw_landmarks_on_image(rgb_image, detection_result):
     annotated_image = np.copy(rgb_image)
     height, width, _ = annotated_image.shape
@@ -47,11 +57,11 @@ def servo_angles(results):
 
     for letter, tip, mcp in zip(FINGER_LETTERS, FINGER_TIPS, FINGER_MCPS):
         if letter == 'T':
-            curled = hand[tip].x > hand[mcp].x if handedness == "Right" else hand[tip].x < hand[mcp].x
+            curled = hand[tip].x < hand[mcp].x if handedness == "Right" else hand[tip].x > hand[mcp].x
         else:
             curled = hand[tip].y > hand[mcp].y
 
-        angle = (2500 if letter == 'M' else 2500) if curled else 0
+        angle = FINGER_ANGLES[letter] if curled else 0
 
         if prev_state.get(letter) != angle:
             prev_state[letter] = angle
