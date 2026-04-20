@@ -16,7 +16,7 @@ Today, I designed the first prototype of the index finger. This design will be t
 ### Design
 ![image](/notebook/assets/Finger-Prototype1.png)  
 
-Since fingers mainly move in I decided to use a resolute/hinge joint for each segment of the finger. For the pins of each hinge, I took inspiration from my school's VEX V5 team. We often use screws to act as pins for hinges, so I decided to use that in my design. I designed each hole to have a diameter of 3.2mm to account for the tolerance of my 3D printer and used M3 screws.  
+Since fingers mainly move in one axis I decided to use a resolute/hinge joint for each segment of the finger. For the pins of each hinge, I took inspiration from my school's VEX V5 team. We often use screws to act as pins for hinges, so I decided to use that in my design. I designed each hole to have a diameter of 3.2mm to account for the tolerance of my 3D printer and used M3 screws.  
 
 ![image](/notebook/assets/fingerMuscles.jpg)  
 Above, you can see a chart that shows the different muscles controlling your fingers. Something unique about the fingers is that there are no actual muscles located inside them. Instead, your body uses muscles in your forearm to move your fingers. These muscles pull on tendons which control how much your fingers are bent. To replicate this, I bought fishing line to act as the tendons and used servos I already had to act as the muscles.
@@ -719,4 +719,36 @@ After the new mount finishes printing, I will calibrate all the servos.
 
 Ayyy it's done printing!
 
-I mounted all the servos to the servo mount and then I started calibrating. 
+I mounted all the servos to the servo mount and then I started calibrating. So far, each of the servos have had wildly different numbers. I only got three of the servos calibrated today: thumb, index, and middle. Since it's getting late, I'll probably calibrate the rest tomorrow. 
+
+## April 19th, 2026 - Sunday
+Hey guys! Today I wanted to redesign the forearm mount because of the lack of support. Even with the new support I added yesterday, it was still bending.
+
+Like always, I want to model my parts so they use the least amount of support as possible. 
+
+After thinking about it, I realized that I don't have to fully redesign the forearm back plate. I just need to add some parts to the support and cut more screw holes for the hand. 
+
+First, I redesigned the support to screw in on both the top and bottom of the forearm. On the bottom, I will use two SHCS so that the bottom is flush with the table. On te top, I'll still stick with BHCS. 
+
+I also extruded triangles on the top and bottom of the support to distribute the force of the servos. 
+![image](/notebook/assets/support_2.png)
+
+Lastly, I extruded a block on top of where the servo mount will sit. Since the servo mount pulls its self up when pulling down the servo, the block will hopefully absorb some of the force. 
+
+Here's the full new design!
+
+![image](/notebook/assets/forearm_v3_1.png)
+
+Once the new parts finish printing, I'll put together the new, hopefully more strong arm!
+
+Alright, it's done printing now and I put it all together. I forgot to mention this but I'm in the process of moving setups so all of my materials are split between two rooms. I have to run to and from that room when I'm missing a part. 
+
+Somehow, one of the servos started spinning in one direction constantly, which I didn't even know was possible for a servo to do. I decided to just turn off the power supply. When I turned back on the power supply, it worked perfectly so I'm not sure what was wrong.
+
+I also had a problem with the fingers getting stuck. It was probably a friction problem, but I don't have or know any lubricants that don't melt PLA. I just used a little water and it seemed to work. After the lubrication, none of the finger seemed to get stuck. 
+
+Finally... the last part of the project... clicking run on the code...
+
+AND IT WORKS!!!
+
+FINALLY! AFTER 2 MONTHS OF WORK, ITS DONE!

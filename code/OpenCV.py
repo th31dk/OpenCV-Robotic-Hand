@@ -24,15 +24,15 @@ FONT_THICKNESS = 1
 HANDEDNESS_TEXT_COLOR = (88, 205, 54)
 FINGER_LETTERS = ['T', 'I', 'M', 'R', 'P']
 FINGER_TIPS = [4, 8, 12, 16, 20]
-FINGER_MCPS = [2, 5, 9, 13, 17]
+KNUCKLES = [2, 5, 9, 13, 17]
 
 # calibrate this
 FINGER_ANGLES = {
     'T': 1500,
-    'I': 1800,
-    'M': 2500,
-    'R': 0,
-    'P': 0,
+    'I': 1700,
+    'M': 2300,
+    'R': 1700,
+    'P': 1500,
 }
 
 
@@ -55,11 +55,11 @@ def servo_angles(results):
     hand = results.hand_landmarks[0]
     handedness = results.handedness[0][0].category_name
 
-    for letter, tip, mcp in zip(FINGER_LETTERS, FINGER_TIPS, FINGER_MCPS):
+    for letter, tip, knuckle in zip(FINGER_LETTERS, FINGER_TIPS, KNUCKLES):
         if letter == 'T':
-            curled = hand[tip].x < hand[mcp].x if handedness == "Right" else hand[tip].x > hand[mcp].x
+            curled = hand[tip].x < hand[knuckle].x if handedness == "Right" else hand[tip].x > hand[knuckle].x
         else:
-            curled = hand[tip].y > hand[mcp].y
+            curled = hand[tip].y > hand[knuckle].y
 
         angle = FINGER_ANGLES[letter] if curled else 0
 
