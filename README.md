@@ -1,7 +1,11 @@
-# OpenCV-Robotic-Hand
-This is a realistic robotic hand that utilizes machine learning and computer vision to mimic your hand movements in real time!
+<h1 align="center">
+    EchoHand
+</h1>
+<h4 align="center">
+    A robot hand that mirror's your every gesture
+</h4>
 
-![image](/assets/assembly.png)
+![image](/assets/fullarm_v2_4.png)
 
 ## Assembly
 ## [Bill of Materials](/BOM.csv)
