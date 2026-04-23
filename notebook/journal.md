@@ -752,3 +752,39 @@ Finally... the last part of the project... clicking run on the code...
 AND IT WORKS!!!
 
 FINALLY! AFTER 2 MONTHS OF WORK, ITS DONE!
+
+![image](/notebook/assets/firehazard.jpeg)
+
+Well, I think that's enough for today, I'll start preparing for submission tomorrow. 
+
+## April 20th, 2026 - Monday
+Since it's done, let's start prepping this for submission to fallout. 
+
+Okay so apparently my project can't just be a big fire hazard so I'll clean it up.
+
+To eliminate the breadboard, I'll solder all of the power cables together. I'll cut off one end of the dupont wire and solder the bare wire together. 
+
+My soldered together wires looked kind of bad but they worked. 
+![image](/notebook/assets/badlysolderedwires.jpeg)
+
+I hooked everything back up and it looked way cleaner without the breadboard, I might also use some zip ties later to clean everything up. 
+
+![image](/notebook/assets/nomorebreadboard.jpeg)
+
+I felt kind of tired of working on the hardware so I just worked on organizing the repository for the rest of the day. 
+
+## April 21st, 2026 - Tuesday
+Happy tuesday! 
+
+Today, I started by moving more files from my separate folder into the repository. I also added a bit more to the README. 
+
+I opened up my assembly final to take another look at it, but turns out it broke somehow, so I had to re mate some parts. I also made it so the servo horn and spools actually line up in the assembly so I can properly define them. 
+
+After I was done with the assembly, I wanted to render the 3D model in Blender, but after watching a few videos, I thought that it was way too complicated and decided to try and render it in SolidWorks. I added colored the support and servo mount white to act as a accent color. I also added a directional light which made it even better. Lastly, I added a scene and removed the cartoon lines from the edges of the parts. At first, I was admiring it, but then I noticed the jagged lines on the edge of the parts. I thought anti-aliasing was supposed to fix it, but I guess not.
+
+![image](/notebook/assets/fullarm_v2_4.png)
+
+Trying to fix this, I looked it up. Apparently I was supposed to use SolidWorks Visualize, which is SolidWork's rendering software, but it kept crashing. Doing some more research, I found that I probably needed to update my GPU drivers, but after I did, it still didn't work. 
+
+Since It was getting late and I had some homework to do, I didn't dwell on it too much and decided to log off for the night. 
+
