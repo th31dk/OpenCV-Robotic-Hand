@@ -788,3 +788,9 @@ Trying to fix this, I looked it up. Apparently I was supposed to use SolidWorks 
 
 Since It was getting late and I had some homework to do, I didn't dwell on it too much and decided to log off for the night. 
 
+## April 22nd, 2026 - Wednesday
+I didn't do much today, but I did work on the README! It looks a lot better since I took inspiration from notaroomba. 
+
+I centered some of the titles and added the story of this project. Besides that, I didn't do much. 
+
+![image](/assets/readme_1.png)
