@@ -791,6 +791,21 @@ Since It was getting late and I had some homework to do, I didn't dwell on it to
 ## April 22nd, 2026 - Wednesday
 I didn't do much today, but I did work on the README! It looks a lot better since I took inspiration from notaroomba. 
 
-I centered some of the titles and added the story of this project. Besides that, I didn't do much. 
+I centered some of the titles and added the story of this project.
 
 ![image](/assets/readme_1.png)
+
+## April 23rd, 2026 - Thursday
+Hey guys! Today, I want to finish organizing all the 3D models into the right places and just make progress to submission in general. 
+
+I started off by adding and changing some things on the BOM. I added the all the materials that were missing before: PETG, elastic cord, and fishing line. I also added the correct values for the filament usage. I separated the parts based on different settings. For example, the finger segments use support interface and the spools use 100% infill. The support, palm, and back forearm plate is printed with default settings.
+
+![image](/assets/slicer_2.png)
+
+Then I remodeled the palm because I had lost the original file somehow. It wasn't that hard since I only had to redraw the fishing line routes. 
+
+After that, I checked to see if I was missing any STEP files, but turns out I was missing the thumb model. I went into CAD to save it as a STEP files, but turns out it was missing the holes for the fishing line and the elastic cord. It took a bit, but I finally remembered how I cut the holes into it. 
+
+![image](/assets/thumbPrototype_v1_3_2.png)
+
+That's basically all I did today. Hopefully I can submit this weekend. 
