@@ -809,3 +809,18 @@ After that, I checked to see if I was missing any STEP files, but turns out I wa
 ![image](/assets/thumbPrototype_v1_3_2.png)
 
 That's basically all I did today. Hopefully I can submit this weekend. 
+
+## April 24th, 2026 - Friday
+Happy Friday! It's finally the weekend, hopefully, I'll be able to ship. 
+
+I started off by updating the wiring schematic to remove the breadboard. 
+
+![image](/assets/finalSchematic.png)
+
+I then removed the filament from the BOM and started working on the list of 3D printed parts. It took a while, but I individually sliced each part to see how much filament it used, and put it into a spreadsheet. I then exported it as a CSV. To import it into markdown, I used this tool: https://convertcsv.com/csv-to-markdown.htm 
+
+![image](/assets/slicer_3.png)
+
+After reviewing the submission checklist, it seems that I have everything needed except the zine. I dont have much experience in graphic design, so this might be a bit hard. First, I want to choose a color pallette. I might go with black, red and white since that's the main colors on the robot. 
+
+Unfortunately, the zine template Hack Club gave me doesn't seem to fit on A5 paper like specified, so I'll start it tomorrow. 
