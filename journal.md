@@ -846,3 +846,39 @@ Next, I need to finish up the zine. I'll be checking stuff off as I go. Since it
 I only got 3 of the check marks done today. I still need a description and the main picture, but I can't take the picture since its getting late. 
 
 ![image](/assets/zine_draft_1.png)
+
+While I wait, I wanted to experiment with print in place hinges. From what I've heard, they require any need for support. 
+
+To get started, I modeled the 3 segments all in the same part. It took a while to define everything because I kept over defining it. Eventually, I got to a design that looks like this. I essentially copied over the v4 finger. 
+![image](/assets/finger_v5_1.png)
+
+I then modeled it so segments 1 and 3 had a cone coming out of it to act as the pin. So now the finger looks like this. Everything has a clearance of 0.2mm right now and I'll adjust it based on how well it prints.
+
+![image](/assets/finger_v5_2.png)
+
+I sliced it Bambu Slicer and it came out to around 8g of filament
+
+![image](/assets/finger_v5_3.png)
+
+## April 26thm 2026 - Sunday
+The finger turned out decent. It wasn't a smooth as I would've liked so I'll stick to the v4 for now. Anyways, it's like 2 in the morning so I will go to sleep and keep working tomorrow.
+
+Good morning guys! Continuing on with yesterday, I want to finish the zine today and submit! Here's the checklist from yesterday:
+
+- [x] Be A5 Dimension
+- [x] Be in my README
+- [x] Describes what it is
+- [x] Have a central graphic
+- [x] Have a QR code to my GitHub repository
+- [x] Have my name, age, and state/country I'm 
+
+Earlier, my sister helped me take some pictures.
+
+![image](/assets/EchoHand_1.jpg)
+
+I'll remove the background in Canva. 
+
+I'm finally done! I added the red stripe to make it pop out more. 
+![image](/assets/zine.png)
+
+Now, I have to find a way to make the demo video. Wait actually, I have a great idea. 

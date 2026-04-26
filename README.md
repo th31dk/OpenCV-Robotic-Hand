@@ -5,7 +5,7 @@
     A robot hand that mirror's your every gesture
 </h4>
 
-![image](/assets/fullarm_v2_4.png)
+![image](/assets/zine.png)
 
 <h2 align="center">
 A Bit About This Project
