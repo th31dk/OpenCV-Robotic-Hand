@@ -882,3 +882,9 @@ I'm finally done! I added the red stripe to make it pop out more.
 ![image](/assets/zine.png)
 
 Now, I have to find a way to make the demo video. Wait actually, I have a great idea. 
+
+https://www.youtube.com/watch?v=Rfja3hf1nRA
+
+I've taken the video, now I want to double check everything so I know I'm not missing anything. 
+
+I think I got everything, so I'll submit now. 

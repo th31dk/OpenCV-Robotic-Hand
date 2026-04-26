@@ -12,9 +12,10 @@ A Bit About This Project
 </h2>
 This project originally started as a ASL Interpreter. However, while researching ways to teach it signs, I discovered computer vision and how you can make robots copy you. Last year, I went to Prototype, a hackathon hosted by Hack Club. There, we had to train these SO-101 Robotic Arms to perform certain actions. The teleoperator part of the training stuck to me the most, so this project was born!
 
+<h2 align="center">
+Assembly
+</h2>
 
-
-## Assembly
 ### Hardware
 #### [Bill Of Materials](/BOM)
 |Part Number|Part Name            |Quantity|Sourcing Link                                       |Cost  |Notes|
@@ -24,11 +25,13 @@ This project originally started as a ASL Interpreter. However, while researching
 |3          |Dupont Wires         |17      |https://a.co/d/0hN85zCM                             |$8.99 |     |
 |4          |External Power Supply|1       |https://a.co/d/045DWk0g                             |$59.99|     |
 |5          |DS3225 Servo         |5       |https://a.co/d/0iK4KOZB                             |$90.00|     |
-|6          |M3x10mm Bolt         |16      |https://www.aliexpress.us/item/2255800794906149.html|$1.86 |     |
-|7          |USB-A to USB-B Cable |1       |https://a.co/d/0aNsTbvj                             |$7.21 |     |
-|8          |Webcam               |1       |https://a.co/d/0bebSZXz                             |$25.00|     |
-|9          |Fishing Line         |2000mm  |https://a.co/d/07G4QxGr                             |$9.98 |     |
-|10         |Elastic Cord         |600mm   |https://a.co/d/07XXOlZX                             |$9.99 |     |
+|6          |M3x10mm BHCS         |24      |https://www.aliexpress.us/item/2255800794906149.html|$1.86 |     |
+|7          |M3x10mm SHCS         |2       |https://www.aliexpress.us/item/3256804341271555.html|$1.50 |     |
+|8          |USB-A to USB-B Cable |1       |https://a.co/d/0aNsTbvj                             |$7.21 |     |
+|9          |Webcam               |1       |https://a.co/d/0bebSZXz                             |$25.00|     |
+|10         |Fishing Line         |2000mm  |https://a.co/d/07G4QxGr                             |$9.98 |     |
+|11         |Elastic Cord         |600mm   |https://a.co/d/07XXOlZX                             |$9.99 |     |
+
 ### [3D Printed Parts](/List%20Of%203D%20Printed%20Parts.csv)
 3D files can be found [here](/Print%20Files/)
 
@@ -53,8 +56,11 @@ This project originally started as a ASL Interpreter. However, while researching
 
 ### Starting the Program
 Once you are done assembling the hand and connecting all the wires, you can just start up the python code and it'll start working automatically. Just hold out a hand and start making gestures! 
+
+[Here's the Demo!](https://www.youtube.com/watch?v=Rfja3hf1nRA)
+
 ### Credits
-Thank you to:
+Thank you to:  
 Hack Club for supporting me throughout this project
 
 Made by Horizon on Youtube for inspiring me to make this project. Check his [robotic hand](https://www.youtube.com/watch?v=aHFo-7ZK1Bk&t=697s) out!
