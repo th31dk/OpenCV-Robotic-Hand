@@ -12,7 +12,7 @@ A Bit About This Project
 </h2>
 This project originally started as a ASL Interpreter. However, while researching ways to teach it signs, I discovered computer vision and how you can make robots copy you. Last year, I went to Prototype, a hackathon hosted by Hack Club. There, we had to train these SO-101 Robotic Arms to perform certain actions. The teleoperator part of the training stuck to me the most, so this project was born!
 
-Once you are done assembling the hand and connecting all the wires, you can just start up the python code and it'll start working automatically. Just hold out a hand and start making gestures! 
+
 
 ## Assembly
 ### Hardware
@@ -29,7 +29,7 @@ Once you are done assembling the hand and connecting all the wires, you can just
 |8          |Webcam               |1       |https://a.co/d/0bebSZXz                             |$25.00|     |
 |9          |Fishing Line         |2000mm  |https://a.co/d/07G4QxGr                             |$9.98 |     |
 |10         |Elastic Cord         |600mm   |https://a.co/d/07XXOlZX                             |$9.99 |     |
-### 3D Printed Parts
+### [3D Printed Parts](/List%20Of%203D%20Printed%20Parts.csv)
 3D files can be found [here](/Print%20Files/)
 
 |Part Number|Part Name            |Quantity|Material                                            |Total Grams|Notes                        |
@@ -50,6 +50,9 @@ Once you are done assembling the hand and connecting all the wires, you can just
 
 ### Wiring Diagram
 ![image](/assets/finalSchematic.png)
+
+### Starting the Program
+Once you are done assembling the hand and connecting all the wires, you can just start up the python code and it'll start working automatically. Just hold out a hand and start making gestures! 
 ### Credits
 Thank you to:
 Hack Club for supporting me throughout this project

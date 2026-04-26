@@ -26,7 +26,6 @@ FINGER_LETTERS = ['T', 'I', 'M', 'R', 'P']
 FINGER_TIPS = [4, 8, 12, 16, 20]
 KNUCKLES = [2, 5, 9, 13, 17]
 
-# calibrate this
 FINGER_ANGLES = {
     'T': 1500,
     'I': 1700,

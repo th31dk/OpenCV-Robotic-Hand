@@ -824,3 +824,25 @@ I then removed the filament from the BOM and started working on the list of 3D p
 After reviewing the submission checklist, it seems that I have everything needed except the zine. I dont have much experience in graphic design, so this might be a bit hard. First, I want to choose a color pallette. I might go with black, red and white since that's the main colors on the robot. 
 
 Unfortunately, the zine template Hack Club gave me doesn't seem to fit on A5 paper like specified, so I'll start it tomorrow. 
+
+## April 25th, 2026 - Saturday
+Hey guys! I just got confirmation that it's supposed to fit like that on A5 paper, so I will try to finish the project today! 
+
+Here are the zine requirements:
+- [x] Be A5 Dimension
+- [ ] Be in my README
+- [ ] Describes what it is
+- [ ] Have a central graphic
+- [x] Have a QR code to my GitHub repository
+- [x] Have my name, age, and state/country I'm from
+
+I'm so done with this project. One of the motors started tweaking again and destroyed the servo mount. This project is starting to get on my nerves. I don't even know why it randomly started spinning in circles. 
+
+Welp, I guess I'll just have to rebuild hand again. After it finished printing, I tried to put it back together as soon as possible because I only had an hour until it needed to be presented at a show and tell. I eventually finished it, one minute before the show and tell started. The show and tell went okay.
+
+Next, I need to finish up the zine. I'll be checking stuff off as I go. Since it's already in A5, I'm already 17% done! Once again, I'm following this color pallete:
+![image](/assets/colorpallete.png)
+
+I only got 3 of the check marks done today. I still need a description and the main picture, but I can't take the picture since its getting late. 
+
+![image](/assets/zine_draft_1.png)
